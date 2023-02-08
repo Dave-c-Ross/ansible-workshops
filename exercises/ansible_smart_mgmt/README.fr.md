@@ -3,11 +3,11 @@
 Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Management (Satellite) en concert avec Red Hat Ansible Automation Platform.
 
 ## Table des matières
-- [Cas d'ulilisation](#use-cases)
+- [Cas d'ulilisation](#Cas d'utilisation)
 - [Présentations](#presentations)
 - [Planification du temps](#time-planning)
 - [Diagramme du laboratoire](#lab-diagram)
-- [Exercices](#Workshop-Exercises)
+- [Exercices](#Exercises)
 
 ## Cas d'utilisation
 
