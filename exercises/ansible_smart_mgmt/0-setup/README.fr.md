@@ -3,14 +3,14 @@ Atelier Automated Smart Management : Configurer l'environnement du laboratoire
 
 Objectif
 ---------
-L'objectif de cet exercice est de mettre en place le laboratoire environemnt après une infrastructure en tant que processus de code. Cet exercice vous obligera à lancer (9) livres de lecture. Les playbooks réalisent ce qui suit:
+L'objectif de cet exercice est de configurer l'environnement du laboratoire en suivant un processus d'Infrastructure as Code. Cet exercice vous demandera de lancer (9) playbooks. Les playbooks accomplissent ce qui suit :
 
-- Populate Ansible Controller with an inventory source, add templates, as well as an additional project.
-- Publier RHEL7 dev vue de contenu dans Satellite
-- Enregistrer des serveurs à l'installation satellite - RHEL7
-- Enregistrer des serveurs à l'installation satellite - CentOS7
-- Pétrir les inventaires dynamiques - RHEL7
-- Planter les inventaires dynamiques - CentOS7
+- Remplir Ansible Controller avec une source d'inventaire, ajouter des modèles, ainsi qu'un projet supplémentaire.
+- Publier la vue du contenu de RHEL7 dev dans Satellite
+- Enregistrer des serveurs dans l'installation Satellite - RHEL7
+- Enregistrer des serveurs dans l'installation Satellite - CentOS7
+- Établir des inventaires dynamiques - RHEL7
+- Établir des inventaires dynamiques - CentOS7
 
 > **NOTE** Pour gagner du temps, Satellite aura déjà un travail exécuté qui configure les environnements de cycle de vie appropriés, les vues de contenu, les clés d'activation.
 
