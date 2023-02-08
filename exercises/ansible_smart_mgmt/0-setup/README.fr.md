@@ -18,13 +18,13 @@ Environnement
 ---------
 > **NOTE** Voici les URL *example*. Vos URLs de laboratoire étudiant et vos identifiants sont fournis depuis la page d'accueil des ateliers après votre enregistrement avec votre nom et votre courriel. 
 * Plateforme d'automatisation ansible
-* **Exemple:** `https://student1.01d1.example.opentlc.com`
-* Ansible Automation Platform login/password de la page d'accueil des ateliers.
+    * **Exemple:** `https://student1.01d1.example.opentlc.com`
+    * Ansible Automation Platform login/password de la page d'accueil des ateliers.
 * Adresse satellite
-* **Exemple:** `https://student1-sat.01d1.example.opentlc.com` (Notez le -sat ajouté à l'URL)
-* Connexion par satellite/mot de passe (même que ci-dessus)
+    * **Exemple:** `https://student1-sat.01d1.example.opentlc.com` (Notez le -sat ajouté à l'URL)
+    * Connexion par satellite/mot de passe (même que ci-dessus)
 
-> **NOTE** Il y a un certain nombre d'avertissements (comme [DEPRECATION WARNING]) dans la sortie playbook run - ceux-ci peuvent être ignorés en toute sécurité aux fins de cet atelier.
+> **NOTE** Il y a un certain nombre d'avertissements (comme [DEPRECATION WARNING]) lors de l'éxecution du playbook - ceux-ci peuvent être ignorés en toute sécurité.
 
 Exercice
 --------
