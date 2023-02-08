@@ -5,8 +5,8 @@ Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Ma
 ## Table des matières
 - [Cas d'ulilisation](#Cas d'utilisation)
 - [Présentations](#presentations)
-- [Planification du temps](#time-planning)
-- [Diagramme du laboratoire](#lab-diagram)
+- [Planification du temps](#planification-du-temps)
+- [Diagramme du laboratoire](#diagramme-du-laboratoire)
 - [Exercices](#exercices)
 
 ## Cas d'utilisation
