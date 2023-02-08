@@ -70,68 +70,68 @@ La job **SETUP / Controller** créera plusieurs Job Template qui seront utiles t
 
 ![templates-iac](images/0-setup-aap2-templates-iac.png)
 
-Maintenant que nous avons plusieurs autres modèles à notre disposition, nous aurons besoin d'en exécuter quatre autres afin de terminer la configuration.
+Maintenant que nous avons plusieurs Job Templates à notre disposition, nous aurons besoin d'en exécuter quatre autres afin de terminer la configuration.
 
-Courez le **SATELLITE / RHEL - Publier le contenu Voir le modèle d'emploi** en cliquant sur le bouton !(images/0-setup-aap2-launch.png) pour lancer. Lors de l'enquête sur la vue du contenu pour publier, à partir du menu déroulant, sélectionnez **RHEL7**
-- Sélectionnez **Suivant** pour examiner le réglage de la course d'emploi, puis cliquez sur **Launch** pour exécuter le modèle de travail.
+Exécutez la job **SATELLITE / RHEL - Publish Content View** en cliquant sur le bouton !(images/0-setup-aap2-launch.png) pour lancer.  Répondez aux questionnaire sur le content view à publier, sélectionnez **RHEL7**
+- Sélectionnez **Next** pour examiner les paramêtres d'éxécution de la job, puis cliquez sur **Launch** pour exécuter le tout. 
 
-Vous serez emmené à la fenêtre de sortie **Jobs SATELLITE / RHEL - Publier un contenu View** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
+Vous serez emmené à la fenêtre de sortie **SATELLITE / RHEL - Publish Content View** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
 
 ![publie-cv-rhel](images/0-setup-aap2-publish-cv-rhel.png)
 
-Ensuite, retournez à Templates et exécutez le modèle de travail **CONVERT2RHEL / 01 - Take node snapshot** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
+Ensuite, retournez à Templates et exécutez la job template **CONVERT2RHEL / 01 - Take node snapshot** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
 Vous serez emmené à la fenêtre de sortie **CONVERT2RHEL / 01 - Take node snapshot** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 7 minutes pour terminer.
 
 ![node-snapshot-complete](images/0-setup-aap2-node-snapshot-complete.png)
 
-Ensuite, retournez à Templates et exécutez le modèle de travail **SERVER / RHEL7 - S'inscrire** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
+Ensuite, retournez à Templates et exécutez le modèle de travail **SERVER / RHEL7 - Register** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
-- Vous serez présenté avec un sondage. Remplissez ceci comme suit:
+- Vous serez présenté avec un formulaire. Remplissez ceci comme suit:
 
 ![rhel-register-survey](images/0-setup-aap2-rhel-register-survey.png)
 
-- Sélectionnez **Suivant** pour procéder à la confirmation de la réponse.
+- Sélectionnez **Next** pour procéder à la confirmation de la réponse.
 
 ![rhel-register-confirm](images/0-setup-aap2-rhel-register-confirm.png)
 
-- Sélectionnez **Lancement** pour exécuter le modèle de travail.
+- Sélectionnez **Launch** pour exécuter la job template.
 
-Vous serez emmené à la fenêtre de sortie **SERVER / RHEL7 - S'inscrire** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
+Vous serez emmené à la fenêtre de sortie **SERVER / RHEL7 - Register** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
 
 ![rhel-register-complete](images/0-setup-aap2-rhel-register-complete.png)
 
-Ensuite, retournez à Templates et exécutez le modèle de travail **SERVER / CentOS7 - Enregistrer** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
+Ensuite, retournez à Templates et exécutez la job template **SERVER / CentOS7 - Register** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
-- Vous serez présenté avec un sondage. Remplissez ceci comme suit:
+- Vous serez présenté avec un formulaire. Remplissez ceci comme suit:
 
 ![centos-register-survey](images/0-setup-aap2-centos-register-survey.png)
 
-- Sélectionnez **Suivant** pour procéder à la confirmation de la réponse.
+- Sélectionnez **Next** pour procéder à la confirmation de la réponse.
 
 ![centos-register-confirm](images/0-setup-aap2-centos-register-confirm.png)
 
-- Sélectionnez **Lancement** pour exécuter le modèle de travail.
+- Sélectionnez **Launch** pour exécuter le modèle de travail.
 
-Vous serez emmené à la fenêtre de sortie **SERVER / CentOS7 - Enregistrer** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
+Vous serez emmené à la fenêtre de sortie **SERVER / CentOS7 - Register** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
 
 ![centos-register-complete](images/0-setup-aap2-centos-register-complete.png)
 
-Ensuite, retournez à Templates et exécutez le modèle de travail **EC2 / Set instance tags based on Satellite(Foreman) facts** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
+Ensuite, retournez à Templates et exécutez la job template **EC2 / Set instance tags based on Satellite(Foreman) facts** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
 Vous serez conduit à la fenêtre de sortie **EC2 / Set instance tags based on Satellite(Foreman) facts** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
 
 ![satellite-ec2-tags](images/0-setup-aap2-satellite-ec2-tags.png)
 
-> **REMARQUE** Pour le modèle d'emploi suivant, consultez la section **Variables** du modèle, en payant une note particulière au **group_tag_map** variable. Une cartographie des nœuds aux noms de groupe est définie. Les balises EC2 pour ces noms de groupe seront assignées aux noeuds définis et cela sera utilisé plus tard par la construction d'inventaire dynamique pour construire des groupes d'inventaires ansibles contenant les noeuds définis, c'est-à-dire. "frontends", "apps", "appdbs".
+> **REMARQUE** Pour la job template suivante, consultez la section **Variables** de la job template, en portant attention à la variable **group_tag_map**. Une correspondance entre les nœuds et les noms de groupe est définie. Les balises EC2 pour ces noms de groupe seront assignées aux noeuds définis et cela sera utilisé plus tard par la construction d'inventaire dynamique pour construire des groupes d'inventaires ansibles contenant les noeuds définis, c'est-à-dire. "frontends", "apps", "appdbs".
 
-Ensuite, exécutez le modèle de travail **EC2 / Set instance tag - AnsibleGroup** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
+Ensuite, exécutez la job template **EC2 / Set instance tag - AnsibleGroup** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
 Vous serez emmené à la fenêtre de sortie **EC2 / Set instance tag - AnsibleGroup** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
 
 ![ansiblegroups-ec2-tags](images/0-setup-aap2-initial-inventory.png)
 
-#### 3\. Inventaires dynamiques - inventaires de compréhension peuplés par des sources dynamiques
+#### 3\. Inventaires dynamiques - comprendre les inventaires alimentés par des sources dynamiques
 
 > **NOTE** Avant d'exécuter les modèles de mise à jour dynamique des inventaires dans les prochaines étapes, naviguez d'abord à l'emplacement des inventaires dans AAP et examinez les inventaires suivants:
 >
