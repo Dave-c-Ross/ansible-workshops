@@ -7,7 +7,7 @@ Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Ma
 - [Présentations](#presentations)
 - [Planification du temps](#time-planning)
 - [Diagramme du laboratoire](#lab-diagram)
-- [Exercices](#exercises)
+- [Exercices](#exercices)
 
 ## Cas d'utilisation
 
