@@ -141,61 +141,61 @@ Vous serez emmené à la fenêtre de sortie **EC2 / Set instance tag - AnsibleGr
 >
 > Notez que ces inventaires n'ont pas encore été remplis.  De plus, lorsque vous êtes dans chacun de ces inventaires, cliquez sur le bouton "Sources" et examinez comment chacun de ces inventaires de sources dynamiques est configuré, en prenant note de la section "SOURCE VARIABLES" pour comprendre comment les hôtes et les groupes résultants pour cet inventaire particulier sont remplis.
 
-Ensuite, retournez à Templates et exécutez le modèle de travail **CONTROLLER / Mise à jour des inventaires via des sources dynamiques** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
+Ensuite, retournez à Templates et exécutez la job template **CONTROLLER / Update inventories via dynamic sources** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
-- Vous serez présenté avec un sondage. Remplissez ceci comme suit:
+- Vous serez présenté avec un formulaire. Remplissez ceci comme suit:
 
 ![rhel-inventory-survey](images/0-setup-aap2-rhel-inventory-survey.png)
 
-- Sélectionnez **Suivant** pour procéder à la confirmation de la réponse.
+- Sélectionnez **Next** pour procéder à la confirmation de la réponse.
 
-- Examen des variables supplémentaires (vous devrez faire défiler le bas de l'enquête)
+- Réviserles variables supplémentaires (vous devrez faire défiler)
 
 ![rhel-inventory-confirm](images/0-setup-aap2-rhel-inventory-confirm.png)
 
-- puis sélectionnez **Lancement** pour exécuter le modèle de travail. Cela devrait prendre moins de 30 secondes pour courir.
+- puis sélectionnez **Launch** pour exécuter la job template. Cela devrait prendre moins de 30 secondes.
 
 ![rhel-inventory-complete](images/0-setup-aap2-rhel-inventory-complete.png)
 
-Exécutez le modèle de travail **CONTROLLER / Mise à jour des inventaires via des sources dynamiques** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour le lancer.
+Exécutez la job template **CONTROLLER / Update inventories via dynamic sources** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour le lancer.
 
-- Vous serez présenté avec un sondage. Remplissez ceci comme suit:
+- Vous serez présenté avec un formulaire. Remplissez ceci comme suit:
 
 ![centos-inventory-survey](images/0-setup-aap2-centos-inventory-survey.png)
 
-- Sélectionnez **Suivant** pour procéder à la confirmation de la réponse.
+- Sélectionnez **Next** pour procéder à la confirmation de la réponse.
 
-- Examen des variables supplémentaires
+- Réviser les variables supplémentaires
 
 ![centos-inventory-confirm](images/0-setup-aap2-centos-inventory-confirm.png)
 
-- puis sélectionnez **Lancement** pour exécuter le modèle de travail.
+- puis sélectionnez **Launch** pour exécuter la job template.
 
 ![centos-inventory-complete](images/0-setup-aap2-centos-inventory-complete.png)
 
-#### 4\. Inventaires dynamiques - inventaires d'examen peuplés par des sources dynamiques - Mis à jour
+#### 4\. Inventaires dynamiques - examiner les inventaires alimentés par des sources dynamiques - Mis à jour
 
 > **NOTE** Maintenant que les modèles de mise à jour de l'inventaire dynamique ont été exécutés, naviguez à l'emplacement des Inventories dans AAP et examinez les inventaires suivants:
 >
-> - ALL Development = HOSTS
-> - CentOS7 Development = HOSTS
-> - Développement RHEL7 = vaccin HOSTS
+>     - ALL Development => Hosts
+>     - CentOS7 Development => Hosts
+>     - RHEL7 Development => Hosts
 >
-> Examiner la façon dont les hôtes et les groupes résultants sont définis à partir d'informations basées sur les balises établies à partir de requêtes antérieures de modèles d'emploi par satellite. Prenez le temps de cliquer sur un hôte et de regarder les variables qui ont été recueillies et définies dans la section "Variables".
+> Examiner la façon dont les hôtes et les groupes résultants sont définis à partir d'informations basées sur les balises établies à partir de requêtes antérieures de modèles d'emploi par Satellite. Prenez le temps de cliquer sur un hôte et de regarder les variables qui ont été recueillies et définies dans la section "Variables".
 
 Ensuite, connectez-vous à Satellite pour effectuer la vérification.
 
-#### 5\. Se connecter au satellite et valider votre environnement
+#### 5\. Se connecter à Satellite et valider votre environnement
 
 ![](https://lh4.googleusercontent.com/xQc7AudiblHnV7vKVFv0_055wfoeODtDltSS1_C6yV_ppF3rmfN_B78dw-Lo-OvN2ey5aE20UkuxnqYPgtmwQ0pqDdXuHqZZ4yI1rV0_E8PaFeLJHBuTR2FngYQwtutxRzpOSrEe)
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface satellite via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe suivant pour vous connecter : *admin / ^password_set_in_deploy_vars PHP*. Une fois connecté, vous verrez la page principale du moniteur.
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface Satellite via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe suivant pour vous connecter : *admin / ^password_set_in_deploy_vars PHP*. Une fois connecté, vous verrez la page principale.
 
-- Cliquez sur **Hosts** - Cancer **Tous les hôtes** pour valider que trois nœuds de serveur RHEL7 et trois CentOS7 sont enregistrés sur Satellite.
+- Cliquez sur **Hosts** -> **All Hosts** pour valider que trois nœuds de serveur RHEL7 et trois CentOS7 sont enregistrés sur Satellite.
 
 ![](https://lh3.googleusercontent.com/h2t4H08gu0eTk44nR3tmLiBIIfdls5dZH0gVpxQJLm9VOeSj9F3fq2llRNgfxetM61TCPeWYBx9WFlNqKEfhJDQZ1U3Y_-WDkHQT_3WlaX7Yjjb9eern8spRuGkEfwofdeotfbkq)
 
-- Cliquez sur **Content** - Cancer **Content Views** - Cancer **RHEL7** pour vérifier que tous les environnements Dev, QA et Prod sont comptabilisés.
+- Cliquez sur **Content** -> **Content Views** -> **RHEL7** pour vérifier que tous les environnements Dev, QA et Prod sont présents.
 
 ![rhel7-content-views](images/0-setup-aap2-centos-content-views.png)
 
