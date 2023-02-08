@@ -29,7 +29,7 @@ Environnement
 Exercice
 --------
 
-#### 1\. Se connecter à la plate-forme d'automatisation ansible (AAP)
+#### 1\. Se connecter à la plate-forme d'automatisation Ansible (AAP)
 
 - Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface graphique AAP via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe fournis dans votre "Workbench Information"
 sur votre "Workshops Homepage".
