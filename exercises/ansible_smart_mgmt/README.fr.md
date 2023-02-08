@@ -1,4 +1,4 @@
-# Atelier automatisé de gestion intelligente
+# Atelier Automated Smart Managemen 
 
 Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Management en concert avec Red Hat Ansible Automation Platform.
 
@@ -11,19 +11,18 @@ Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Ma
 
 ## Utilisation des cas
 
-Cet atelier se concentre actuellement sur 3 principaux points de douleur client:
+Cet atelier se concentre actuellement sur trois principaux points sensibles :
 - Conformité (OpenSCAP Scanning) et gestion de la vulnérabilité
-- Gestion du Patch/Package
-- Conversion CentOS à RHEL
-- (WIP)
+- Gestion des Patches/Paquetages
+- Conversion CentOS vers RHEL
 
 ## Présentations
 
-Les exercices sont explicatifs et guident les participants à travers tout le laboratoire. Tous les concepts sont expliqués quand ils sont introduits.
+Les exercices sont auto-explicatifs et guident les participants tout au long du laboratoire. Tous les concepts sont expliqués lorsqu'ils sont introduits.
 
-Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer Automation, les bases de l'Ansible et les sujets des exercices en détail. La présentation de l'atelier est située au [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf).
+Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer l'automatisation, les bases d'Ansible et les sujets des exercices en détail. La présentation de l'atelier est située au [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf).
 
-Jetez également un coup d'oeil à notre plate-forme de pratiques exemplaires ansibles:
+Jetez également un coup d'oeil à notre présentation sujr les meilleurs pratiques avec Ansible:
 [Pratiques exemplaires disponibles](../../decks/ansible_best_practices.pdf)
 
 ## Planification du temps
