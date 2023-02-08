@@ -7,7 +7,7 @@ Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Ma
 - [Présentations](#presentations)
 - [Planification du temps](#time-planning)
 - [Diagramme du laboratoire](#lab-diagram)
-- [Atelier Exercices](#Workshop-Exercises)
+- [Exercices](#Workshop-Exercises)
 
 ## Cas d'utilisation
 
@@ -49,7 +49,7 @@ Cela dit, les exercices eux-mêmes devraient prendre environ 4 heures. Chaque la
 
 
 
-## Atelier Exercices
+## Exercices
 
 * [Exercice 0: Configuiser l'environnement du laboratoire](0-setup/README.fr.md)
 * [Exercice 1: Conformité / Gestion de la vulnérabilité](1-compliance/README.fr.md)
