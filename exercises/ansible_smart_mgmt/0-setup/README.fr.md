@@ -12,7 +12,7 @@ L'objectif de cet exercice est de configurer l'environnement du laboratoire en s
 - Créé des inventaires dynamiques - RHEL7
 - Créé des inventaires dynamiques - CentOS7
 
-> **NOTE** Pour gagner du temps, Certaines tâches pour configurer Satellite auront déjà été exécuter :  mise en place des environnements de cycle de vie appropriés, certains content views et les clés d'activation.
+> **NOTE** Pour gagner du temps, certaines tâches pour configurer Satellite auront déjà été exécutées :  mise en place des environnements de cycle de vie appropriés, certains content views et les clés d'activation.
 
 Environnement
 ---------
