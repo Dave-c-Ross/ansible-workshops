@@ -36,16 +36,16 @@ Cela dit, les exercices eux-mêmes devraient prendre environ 4 heures. Chaque la
 
 ### Environnement
 
-| Role                    | Nom dans l'inventaire |
+| Rôle                    | Nom dans l'inventaire |
 | ------------------------| ---------------|
 | Automation controller   | ansible-1      |
-| Satellite Server        | satellite      |
-| Managed Host 1 - RHEL   | node1          |
-| Managed Host 2 - RHEL   | node2          |
-| Managed Host 3 - RHEL   | node3          |
-| Managed Host 4 - CentOS | node4          |
-| Managed Host 5 - CentOS | node5          |
-| Managed Host 6 - CentOS | node6          |
+| Serveur Satellite       | satellite      |
+| Host géré 1 - RHEL   | node1          |
+| Host géré 2 - RHEL   | node2          |
+| Host géré 3 - RHEL   | node3          |
+| Host géré 4 - CentOS | node4          |
+| Host gété 5 - CentOS | node5          |
+| Host gété 6 - CentOS | node6          |
 
 
 
