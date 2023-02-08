@@ -42,19 +42,19 @@ sur votre "Workshops Homepage".
 
 #### 2\. Lancer des modèles de travail (job template) Ansible
 
-Cette étape montre l'exécution de modèles d'emploi. Cependant, cette étape utilise sept modèles pour initialiser la configuration de l'environnement du laboratoire.
+Cette étape montre l'exécution d'une Job Template. Cependant, cette étape utilise sept Job Templates pour initialiser la configuration de l'environnement du laboratoire.
 
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Modèles**.
+- Utilisez le menu du volêt latérale sur la gauche pour sélectionner **Templates**.
 
-- D'abord, vous devriez voir deux **Modèles** nommés **SETUP / Satellite** et **SETUP / Controller**.
+- D'abord, vous devriez voir deux **Templates** nommés **SETUP / Satellite** et **SETUP / Controller**.
 
 ![templates](images/0-setup-aap2-templates.png)
 
-> **NOTE** Remarquez que le **SETUP / Satellite** travail a déjà été terminé pour vous.
+> **NOTE** Remarquez que la job **SETUP / Satellite** a déjà été éxécuter pour vous.
 
-Premièrement, vous devrez exécuter le modèle de travail **SETUP / Contrôleur**.
+Premièrement, vous devrez exécuter la Job Template **SETUP / Contrôleur**.
 
-- Cliquez sur le ![lancement](images/0-setup-aap2-launch.png) à droite du modèle de travail **SETUP / Contrôleur**.
+- Cliquez sur le ![lancement](images/0-setup-aap2-launch.png) à droite de la template **SETUP / Contrôleur**.
 
 Vous serez conduit à la fenêtre de sortie **Jobs phy SETUP / Contrôleur** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 2 minutes pour terminer.
 
