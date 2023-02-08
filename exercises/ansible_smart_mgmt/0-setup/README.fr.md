@@ -5,7 +5,7 @@ Objectif
 ---------
 L'objectif de cet exercice est de configurer l'environnement du laboratoire en suivant un processus d'Infrastructure as Code. Cet exercice vous demandera de lancer plusieurs playbooks. Les playbooks accomplissent ce qui suit :
 
-- Configure Ansible Controller avec une source d'inventaire, des modèles, ainsi que l'ajout d'un projet.
+- Configure Ansible Controller avec une source d'inventaire, des modèles, ainsi que l'ajout d'un projet
 - Publie le Content View RHEL7 dev dans Satellite
 - Enregistre des serveurs sous Satellite - RHEL7
 - Enregistrer des serveurs sous Satellite - CentOS7
