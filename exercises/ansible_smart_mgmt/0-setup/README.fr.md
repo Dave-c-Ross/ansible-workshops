@@ -60,13 +60,13 @@ Vous serez conduit à la fenêtre de sortie **Jobs > SETUP / Controller** où vo
 
 ![control-complete](images/0-setup-aap2-setup-control-complete.png)
 
-> **NOTE** Veuillez autoriser le **SETUP / Controller** job à exécuter avant de passer à l'exécution de la prochaine Job Template.
+> **NOTE** Veuillez attendre que la job **SETUP / Controller** soit terminer avant de passer à l'exécution de la prochaine Job Template.
 
-Lorsque vous aurez terminé, vous verrez un statut réussi ainsi qu'une reprise de jeu en bas de l'écran.
+Lorsque que terminé, vous verrez un statut réussi ainsi qu'un PLAY RECAP en bas de l'écran.
 
-- Retourner au **Modèles** sur la face gauche.
+- Retourner au **Templates** sur le volet de gauche.
 
-Le travail **SETUP / Contrôleur** créera plusieurs modèles d'emploi qui seront utiles tout au long du reste de cet atelier.
+La job **SETUP / Controller** créera plusieurs Job Template qui seront utiles tout au long de cet atelier.
 
 ![templates-iac](images/0-setup-aap2-templates-iac.png)
 
