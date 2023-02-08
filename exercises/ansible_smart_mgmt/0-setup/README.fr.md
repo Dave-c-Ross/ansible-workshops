@@ -36,7 +36,7 @@ sur votre "Workshops Homepage".
 
 ![login screen](images/0-setup-aap2-login.png)
 
-- Lors d'une connexion réussie, vous pourrez voir le tableau de bord de la plate-forme d'automatisation ansible.
+- Lors d'une connexion réussie, vous pourrez voir le tableau de bord de la plate-forme d'automatisation Ansible.
 
 - Utilisez le menu du volet latéral sur la gauche pour sélectionner **Projets** et examiner les deux projets nommés ** Gestion automatisée** et **Fact Scan**. Ces projets, ainsi que l'inventaire de l'atelier (**Inventoires** - Cancer **Inventaire des ateliers de travail**) ont été mis en place pour vous pendant la fourniture de l'environnement du laboratoire.
 
