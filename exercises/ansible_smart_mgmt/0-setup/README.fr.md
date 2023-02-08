@@ -20,7 +20,7 @@ Environnement
 * Plateforme d'automatisation ansible
     * **Exemple:** `https://student1.01d1.example.opentlc.com`
     * Ansible Automation Platform login/password de la page d'accueil des ateliers.
-* Adresse satellite
+* Adresse Satellite
     * **Exemple:** `https://student1-sat.01d1.example.opentlc.com` (Notez le -sat ajouté à l'URL)
     * Connexion par satellite/mot de passe (même que ci-dessus)
 
