@@ -3,13 +3,13 @@
 Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Management en concert avec Red Hat Ansible Automation Platform.
 
 ## Table des matières
-- [Utilisation des cas](#use-cases)
+- [Cas d'ulilisation](#use-cases)
 - [Présentations](#presentations)
 - [Planification du temps](#time-planning)
 - [Diagramme du laboratoire](#lab-diagram)
 - [Atelier Exercices](#Workshop-Exercises)
 
-## Utilisation des cas
+## Cas d'utilisation
 
 Cet atelier se concentre actuellement sur trois principaux points sensibles :
 - Conformité (OpenSCAP Scanning) et gestion de la vulnérabilité
