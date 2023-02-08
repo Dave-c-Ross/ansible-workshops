@@ -36,7 +36,7 @@ Cela dit, les exercices eux-mêmes devraient prendre environ 4 heures. Chaque la
 
 ### Environnement
 
-| Role                    | Inventory name |
+| Role                    | Nom dans l'inventaire |
 | ------------------------| ---------------|
 | Automation controller   | ansible-1      |
 | Satellite Server        | satellite      |
