@@ -1,4 +1,4 @@
-# Atelier Automated Smart Managemen 
+# Atelier Automated Smart Management 
 
 Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Management en concert avec Red Hat Ansible Automation Platform.
 
