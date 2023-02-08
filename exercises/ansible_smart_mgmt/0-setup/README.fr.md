@@ -54,13 +54,13 @@ Cette étape montre l'exécution d'une Job Template. Cependant, cette étape uti
 
 Premièrement, vous devrez exécuter la Job Template **SETUP / Controller**.
 
-- Cliquez sur le ![lancement](images/0-setup-aap2-launch.png) à droite de la template **SETUP / Contrôleur**.
+- Cliquez sur le ![lancement](images/0-setup-aap2-launch.png) à droite de la template **SETUP / Controller**.
 
-Vous serez conduit à la fenêtre de sortie **Jobs phy SETUP / Contrôleur** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 2 minutes pour terminer.
+Vous serez conduit à la fenêtre de sortie **Jobs > SETUP / Controller** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 2 minutes pour terminer.
 
 ![control-complete](images/0-setup-aap2-setup-control-complete.png)
 
-> **NOTE** Veuillez autoriser le **SETUP / Controller** job à exécuter avant de passer à l'exécution du prochain modèle.
+> **NOTE** Veuillez autoriser le **SETUP / Controller** job à exécuter avant de passer à l'exécution de la prochaine Job Template.
 
 Lorsque vous aurez terminé, vous verrez un statut réussi ainsi qu'une reprise de jeu en bas de l'écran.
 
