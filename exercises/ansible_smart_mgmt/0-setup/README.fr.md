@@ -52,7 +52,7 @@ Cette étape montre l'exécution d'une Job Template. Cependant, cette étape uti
 
 > **NOTE** Remarquez que la job **SETUP / Satellite** a déjà été éxécuter pour vous.
 
-Premièrement, vous devrez exécuter la Job Template **SETUP / Contrôleur**.
+Premièrement, vous devrez exécuter la Job Template **SETUP / Controller**.
 
 - Cliquez sur le ![lancement](images/0-setup-aap2-launch.png) à droite de la template **SETUP / Contrôleur**.
 
