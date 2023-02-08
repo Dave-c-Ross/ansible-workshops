@@ -60,7 +60,7 @@ Vous serez conduit à la fenêtre de sortie **Jobs > SETUP / Controller** où vo
 
 ![control-complete](images/0-setup-aap2-setup-control-complete.png)
 
-> **NOTE** Veuillez attendre que la job **SETUP / Controller** soit terminer avant de passer à l'exécution de la prochaine Job Template.
+> **NOTE** Veuillez attendre que la job **SETUP / Controller** soit terminée avant de passer à l'exécution de la prochaine Job Template.
 
 Lorsque que terminé, vous verrez un statut réussi ainsi qu'un PLAY RECAP en bas de l'écran.
 
