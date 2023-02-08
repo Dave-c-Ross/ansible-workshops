@@ -133,13 +133,13 @@ Vous serez emmené à la fenêtre de sortie **EC2 / Set instance tag - AnsibleGr
 
 #### 3\. Inventaires dynamiques - comprendre les inventaires alimentés par des sources dynamiques
 
-> **NOTE** Avant d'exécuter les modèles de mise à jour dynamique des inventaires dans les prochaines étapes, naviguez d'abord à l'emplacement des inventaires dans AAP et examinez les inventaires suivants:
+> **NOTE** Avant d'exécuter les jobs templatesde mise à jour dynamique des inventaires dans les prochaines étapes, naviguez d'abord à l'emplacement des inventaires dans AAP et examinez les inventaires suivants:
 >
-> - ALL Development = Hosts
-> - CentOS7 Development = Hosts
-> - Développement RHEL7 = vaccin Hosts
+>     - ALL Development => Hosts
+>     - CentOS7 Development => Hosts
+>     - RHEL7 Development => Hosts
 >
-> Notez que ces inventaires doivent encore être peuplés. En outre, pendant que vous êtes dans chacun de ces inventaires, cliquez sur le bouton « Sources » et examinez comment chacun de ces inventaires de sources dynamiques sont configurés, en prenant note de la section « SOURCE VARIABLES » pour comprendre comment les hôtes et les groupes qui en résultent pour cet inventaire sont peuplés.
+> Notez que ces inventaires n'ont pas encore été remplis.  De plus, lorsque vous êtes dans chacun de ces inventaires, cliquez sur le bouton "Sources" et examinez comment chacun de ces inventaires de sources dynamiques est configuré, en prenant note de la section "SOURCE VARIABLES" pour comprendre comment les hôtes et les groupes résultants pour cet inventaire particulier sont remplis.
 
 Ensuite, retournez à Templates et exécutez le modèle de travail **CONTROLLER / Mise à jour des inventaires via des sources dynamiques** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
