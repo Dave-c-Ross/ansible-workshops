@@ -20,14 +20,14 @@ Cet atelier se concentre actuellement sur trois principaux points sensibles :
 
 Les exercices sont auto-explicatifs et guident les participants tout au long du laboratoire. Tous les concepts sont expliqués lorsqu'ils sont introduits.
 
-Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer l'automatisation, les bases d'Ansible et les sujets des exercices en détail. La présentation de l'atelier est située au [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf).
+Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer plus en détails l'automatisation, les bases d'Ansible et les sujets des exercices. La présentation de l'atelier est située au [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf).
 
-Jetez également un coup d'oeil à notre présentation sujr les meilleurs pratiques avec Ansible:
+Jetez également un coup d'oeil à notre présentation sur les meilleurs pratiques avec Ansible:
 [Pratiques exemplaires disponibles](../../decks/ansible_best_practices.pdf)
 
 ## Planification du temps
 
-Le temps nécessaire pour faire les ateliers dépend fortement de plusieurs facteurs : le nombre de participants, la familiarité avec Linux en général et le nombre de discussions entre eux.
+Le temps nécessaire pour faire les ateliers dépend fortement de plusieurs facteurs : le nombre de participants, la familiarité avec Linux en général et le nombre de discussions entre les ateliers.
 
 Cela dit, les exercices eux-mêmes devraient prendre environ 4 heures. Chaque laboratoire dure environ 30 à 45 minutes. La présentation qui accompagne elle-même ajoute ~1 heure.
 
