@@ -1,4 +1,4 @@
-Gestion intelligente automatisée Atelier : Configurer l'environnement du laboratoire
+Atelier Automated Smart Management : Configurer l'environnement du laboratoire
 ====================================================================
 
 Objectif
