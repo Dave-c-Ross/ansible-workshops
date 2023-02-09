@@ -137,77 +137,77 @@ Vous allez être amené à la fenêtre de sortie **Jobs > SATELLITE / Compliance
 ![aap_arf](images/1-compliance-aap2-Satellite_ARF.png)
 
 - Le choix d'une règle présente d'autres renseignements concernant la justification ainsi qu'une description de la règle qui comprend des références et des identifiants.
-- Maintenant, décochez tout sauf la case **échouement**. Ensuite, faites défiler.
+- Maintenant, décochez tout sauf la case **fail**. Ensuite, faites défiler.
 cliquez sur l'échec "Prevent Login to Accounts With Empty Password"
 
-- Si vous défilez la page, vous remarquerez plusieurs options d'assainissement, y compris
-Un snippet 'Ansible'. Cliquez sur "montrer" à côté du "Snippet d'assainissement",
-qui présente ensuite des tâches que vous pouvez inclure dans un livre de lecture pour automatiser
-l'assainissement dans les systèmes touchés.
+- Si vous défilez la page, vous remarquerez plusieurs options de rémédiation, y compris
+un snippet 'Ansible'. Cliquez sur "show" à côté du "Remediation Ansible Snippett",
+qui présente ensuite des tâches que vous pouvez inclure dans un playbook pour automatiser
+la rémédiation sur les systèmes touchés.
 
 ![aap_arf](images/1-compliance-aap2-Satellite_ARF2.png)
 
-#### 7\. Expanding OpenSCAP policy scans
+#### 7\. Extension des analyses de politiques d'OpenSCAP
 
 Cette étape élargira notre analyse politique OpenSCAP pour ajouter un autre profil de conformité XCCDF appelé ```STIG_Compliance```. Nous allons également nous étendre pour inclure tous les systèmes dans l'inventaire 'RHEL7 Development' en ajustant la variable supplémentaire 'HOSTS' à 'all' au lieu de spécifier un système unique.
 
 - Dans Satellite, passez par "Hosts" dans le menu à gauche de l'écran, puis cliquez sur "Policies".
 
-- Cliquez sur le bouton "Nouvelle politique de conformité"
+- Cliquez sur le bouton "New Compliance Policy"
 
 - Sélectionnez "Manual" dans les options de déploiement et cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP6.png)
 
-- Créer le nom de la politique "STIG_Compliance" et fournir toute description que vous voulez. Puis cliquez sur "Suivant"
+- Créer le nom de la politique "STIG_Compliance" et fournir la description que vous souhaitez. Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP7.png)
 
-- Sélectionnez le contenu par défaut "Red Hat rhel7" et "DISA STIG for Red Hat Enterprise Linux 7". Il n'y a pas de fichier d'adaptation. Puis cliquez sur "Suivant"
+- Sélectionnez le contenu par défaut "Red Hat rhel7" et "DISA STIG for Red Hat Enterprise Linux 7". Il n'y a pas de fichier d'adaptation (tailoring). Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP8.png)
 
-- Il faut établir un calendrier pour créer une nouvelle politique de conformité. Vous pouvez sélectionner "Weekly" et "Monday" à des fins de laboratoire. Puis cliquez sur "Suivant"
+- Il faut établir un calendrier pour créer une nouvelle politique de conformité. Vous pouvez sélectionner "Weekly" et "Monday" à des fins de laboratoire. Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP9.png)
 
-- Les étapes 5, 6 et 7 dans le cadre de la nouvelle politique de conformité peuvent utiliser des valeurs par défaut. Cliquez sur "Suivant" par "Lieux", "Organisations", et "Hostgroups"
+- Les étapes 5, 6 et 7 dans le cadre de la nouvelle politique de conformité peuvent utiliser des valeurs par défaut. Cliquez sur "Next" pour "Location", "Organisations", et "Hostgroups"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP10.png)
 
 - Maintenant, nous allons mettre à jour notre modèle d'emploi OpenSCAP_Configure dans Ansible Automation Platform et lancer un autre scanner de conformité PCI, plus le scan de conformité STIG.
 - Dans Ansible Automation Platform, cliquez sur 'Templates' dans le menu de la pane latérale gauche
-- Sélectionnez le modèle d'emploi OpenSCAP_Configure, et cliquez sur éditer en bas du modèle pour apporter des modifications aux « Variables Extra » :
+- Sélectionnez la job template OpenSCAP_Configure, et cliquez sur éditer en bas de la job pour apporter des modifications aux « Variables Extra » :
 
-Variables supplémentaires (Regardez l'espacement exact fourni ci-dessous.
-Notez que les extravars que nous fournissons doivent être
-en format YAML):
+        Extra Variables (Respectez l'espacement exact indiqué ci-dessous.
+        Notez que les extra-vars que nous fournissons doivent être
+        au format YAML):
 
----
-HOSTS : tous
-Policy_scan:
-- PCI_Compliance
-- STIG_Compliance
+        ---
+        HOSTS: all
+        Policy_scan:
+          - PCI_Compliance
+          - STIG_Compliance
 
 ![aap_template](images/1-compliance-aap2-template2-fix.png)
 
-- Laissez le reste des champs vierges ou comme ils sont, et cliquez sur 'Save'. Vous pouvez ensuite sélectionner 'Launch' pour déployer le modèle d'emploi.
+- Laissez le reste des champs vierges comme ils sont, et cliquez sur 'Save'. Vous pouvez ensuite sélectionner 'Launch' pour éxécutez la job template.
 
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs SATELLITE / Conformité - OpenSCAP_Configure**. Cela prendra environ 5 minutes pour terminer. Attendez que le modèle d'emploi se termine avant de passer à l'étape suivante.
+- L'éxécution va vous conduira à la fenêtre de sortie **Jobs > SATELLITE / Compliance - OpenSCAP_Configure**. Cela prendra environ 5 minutes pour terminer. Attendez que l'éxécution se termine avant de passer à l'étape suivante.
 
 ![aap_output](images/1-compliance-aap2-OpenSCAP_Configure-output2-fix.png)
 
-#### 8\. Naviguez de nouveau sur Satellite pour examiner le fichier de déclaration d'actifs (ARF).
+#### 8\. Naviguez de nouveau sur Satellite pour examiner le fichier Asset Reporting File (ARF).
 
 - Survoler "Hosts" dans le menu à gauche de l'écran, puis cliquez sur "Reports".
 
-- Notez que nous avons maintenant facilement réduit à six scans, 2 scans de chaque noeud pour PCI_Compliance et pour STIG_Compliance.
+- Notez que nous avons passé à six scans, 2 scans pour chaque noeud, un pour PCI_Compliance et l'autre pour STIG_Compliance.
 
 ![aap_arf](images/1-compliance-aap2-Satellite_ARF-Final.png)
 
-- Chaque rapport peut être examiné indépendamment d'autres analyses de noeuds et des mesures correctives pour les constatations de règles peuvent être complétées selon les exigences de vos propres politiques internes.
+- Chaque rapport peut être examiné indépendamment des autres analyses de nœuds et les mesures correctives proposées par les résultats des règles peuvent être effectuées conformément aux exigences de vos propres politiques internes.
 
-#### 9\. End Lab
+#### 9\. Fin du laboratoire
 
-- Tu as fini le labo.
+- Félicitations, tu as terminé le laboratoire ! 
 - Continuer à [Exercice 2: Gestion du Patch / OS](../2-patching/README.fr.md), OU [Retour à la page principale de l'atelier](../README.fr.md)
