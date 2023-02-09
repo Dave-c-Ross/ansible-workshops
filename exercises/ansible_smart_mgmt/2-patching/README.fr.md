@@ -1,32 +1,32 @@
-Atelier automatisé de gestion intelligente : Automatisation de la gestion du patch
+Atelier Automated Smart Management  : Automatisation de la gestion des correctifs
 ================================================================
 
-Dans cette partie de l'atelier, nous apprendrons comment utiliser des workflows dans Ansible Automation Platform pour orchestrer la gestion de patchs pour plusieurs serveurs linux. Automatiser la gestion des patchs réduit les erreurs humaines et améliore la configuration et la précision des patchs. En outre, l'automatisation fournit des capacités pour réduire l'entrée manuelle associée aux systèmes d'identification, de test et de patching. L'utilisation de la plateforme Automation permet des scénarios de patching plus compliqués.
+Dans cette partie de l'atelier, nous apprendrons comment utiliser des workflows dans Ansible Automation Platform pour orchestrer la gestion de correctifs pour plusieurs serveurs linux. Automatiser la gestion des correctifs réduit les erreurs humaines et améliore la configuration et la précision des correctifs. En outre, l'automatisation fournit des capacités pour réduire l'entrée manuelle associée aux systèmes d'identification, de test et de patching. L'utilisation de la plateforme Ansible Automation permet des scénarios de gestion de correctifs plus complexe.
 
 Environnement
 -----------
 
-- Satellite 6.x, Ansible Automation Platform 4.x
+- Satellite 6.x, Ansible Automation Platform 2.x
 
 - 3 clients Red Hat Enterprise Linux v7.9
 
 Préalables
 --------------
 
-- Exercice 0 : Configuration Lab
+- Exercice 0 : Lab de configuration
 
 - Organisation à utiliser = Organisation par défaut
 
 - Lieu à utiliser = Lieu par défaut
 
-- Une vue de contenu = RHEL7
+- Content View = RHEL7
 
 - Environnements de cycle de vie = Dev, QA, Prod
 
 Exercice
 --------
 
-#### 1\. Se connecter à la plate-forme d'automatisation ansible
+#### 1\. Se connecter à la plate-forme d'automatisation Ansible
 
 - Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Ansible Automation Platform via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe suivant pour vous connecter: admin / ^password vous avez été fourni
 
@@ -38,7 +38,7 @@ Exercice
 
 #### 2\. Création d'un nouveau flux de travail de Patching
 
-Maintenant, nous allons commencer à configurer un workflow qui comprend la publication d'une vue de contenu, la promotion d'une vue de contenu, une analyse de faits, ainsi qu'un patching de serveur. L'objectif est de publier une nouvelle vue de contenu et de promouvoir notre environnement rhel7_DEV à QA.
+Maintenant, nous allons commencer à configurer un workflow qui comprend la publication d'un Content View, s promotion, une analyse de faits, ainsi que le mise en application des correctifs de sécurité. L'objectif est de publier un nouveau Content View et de promouvoir notre environnement rhel7_DEV à QA.
 
 - Commencez en cliquant sur "Templates" dans le menu à gauche, puis cliquez sur le bouton "Ajouter" et choisissez "Ajouter le modèle de workflow".
 
