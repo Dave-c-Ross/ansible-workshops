@@ -13,62 +13,62 @@ Environnement
 Préalables
 --------------------------------------------------------------------------------------
 
-- Exercice 0 : Configuration Lab
+- Exercice 0 : Lab de configuration
 
 - Organisation à utiliser = Organisation par défaut
 
-- Vue du contenu = RHEL7
+- Content View = RHEL7
 
 - Environnements de cycle de vie = Dev, QA, Prod
 
 Exercice
 --------
 
-#### 1\. Se connecter au satellite
+#### 1\. Se connecter à Satellite
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur satellite fourni, puis connectez-vous en utilisant la nomenclature suivante: *admin /*
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Satellite fourni, puis connectez-vous en utilisant la nomenclature suivante: *admin /*
 
 ![login screen](images/1-compliance-aap2-Satellite_login.png)
 
-- Vous verrez le tableau de bord satellite lorsque vous vous connectez
+- Vous verrez le tableau de bord Satellite lorsque vous vous connectez
 
 ![satellite_dash](images/1-compliance-aap2-Satellite_Dashboard.png)
 
 #### 2\. Créer une nouvelle politique de conformité
 
-Maintenant, nous allons commencer à configurer une politique de conformité que nous pouvons utiliser pour analyser nos noeuds RHEL.
+Maintenant, nous allons commencer à configurer une politique de conformité que nous pouvons utiliser pour analyser nos systèmes RHEL.
 
-- Dans le hover satellite sur 'Hosts' à partir du menu sur le côté gauche, puis cliquez sur 'Policies'
+- Allez sur 'Hosts' à partir du menu sur le côté gauche, puis cliquez sur 'Policies'
 
-- Cliquez sur le bouton « Nouvelle politique » et remplissez les détails comme suit à l'étape 3.
+- Cliquez sur le bouton « New Policy » et remplissez les détails comme suit à l'étape 3.
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP.png)
 
 #### 3\. Configurer une nouvelle politique de conformité
 
-Maintenant, nous allons commencer à configurer notre serveur satellite pour pouvoir gérer une politique de conformité
+Maintenant, nous allons commencer à configurer notre serveur Satellite pour pouvoir gérer une politique de conformité
 
 - Sélectionnez "Manual" dans les options de déploiement et cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP1.png)
 
-- Créer le nom de la politique "PCI_Compliance" et fournir toute description que vous voulez. Puis cliquez sur "Suivant"
+- Créer le nom de la politique "PCI_Compliance" et fournir la description que vous souhaitez. Puis cliquez sur "Suivant"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP2.png)
 
-- Sélectionnez le contenu par défaut "Red Hat rhel7" et "PCI-DSS v3.2.1 Baseline de contrôle pour Red Hat Enterprise Linux 7". Il n'y a pas de fichier d'adaptation. Puis cliquez sur "Suivant"
+- Sélectionnez le contenu par défaut "Red Hat rhel7" et "PCI-DSS v3.2.1 Control Baseline for Red Hat Enterprise Linux 7". Il n'y a pas de fichier d'adaptation (tailoring). Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP3.png)
 
-- Il faut établir un calendrier pour créer une nouvelle politique de conformité. Vous pouvez sélectionner "Weekly" et "Monday" aux fins de cet exercice. Puis cliquez sur "Suivant"
+- Il faut établir un calendrier pour créer une nouvelle politique de conformité. Vous pouvez sélectionner "Weekly" et "Monday" aux fins de cet exercice. Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP4.png)
 
-- Les étapes 5, 6 et 7 dans le cadre de la nouvelle politique de conformité peuvent utiliser des valeurs par défaut. Cliquez sur "Suivant" par "Lieux", et "Organisations". Pour "Hostgroups" cliquez sur "Soumettre"
+- Les étapes 5, 6 et 7 dans le cadre de la nouvelle politique de conformité peuvent utiliser des valeurs par défaut. Cliquez sur "Next" pour "Location", et "Organisations". Puis à "Hostgroups" cliquez sur "Submit"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP5.png)
 
-#### 4\. Se connecter à la plate-forme d'automatisation ansible
+#### 4\. Se connecter à la plate-forme d'automatisation Ansible
 
 - Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Ansible via le lien trouvé dans votre environnement puis connectez-vous à l'aide de la nomenclature suivante: *admin /*
 
@@ -78,13 +78,13 @@ Maintenant, nous allons commencer à configurer notre serveur satellite pour pou
 
 ![aap_dashboard](images/1-compliance-aap2-dashboard.png)
 
-#### 5\. Configurer et lancer un modèle de plateforme d'automatisation ansible pour lancer un scan OpenSCAP.
+#### 5\. Configurer et lancer une template Ansible pour lancer un scan OpenSCAP.
 
 Cette étape nous permettra de scanner un seul hôte rhel7 avec la politique ```PCI_Compliance``` que nous avons configurée sur Satellite.
 
 - Dans Ansible Automation Platform cliquez sur 'Templates' dans le menu de la pane latérale gauche
 
-- Cliquez sur l'icône BLUE 'Add' et sélectionnez 'Ajouter un modèle d'emploi' dans le menu déroulant. Remplir les détails comme suit:
+- Cliquez sur l'icône BLUE 'Add' et sélectionnez 'Add job template' dans le menu déroulant. Remplir les détails comme suit:
 
 Nom: SATELLITE / Conformité - OpenSCAP_Configure
 
