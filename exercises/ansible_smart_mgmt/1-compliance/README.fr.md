@@ -6,7 +6,7 @@ Dans cet exercice, nous allons apprendre à configurer et à effectuer un scan O
 Environnement
 -----------
 
-- Red Hat Satellite v6.x, Ansible Automation Platform 4.x
+- Red Hat Satellite v6.x, Ansible Automation Platform 2.x
 
 - 3 clients Red Hat Enterprise Linux v7.9
 
