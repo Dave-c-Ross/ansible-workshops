@@ -18,7 +18,7 @@ Vue d'ensemble
 
 **Résumé**
 - Rappelez-vous, lors de la configuration initiale de l'environnement, nous avons créé une sauvegarde des données de l'instance (dans le cas où un retour ou une restauration est nécessaire. Mieux vaut prévenir que guérir.)
-- Nous utiliserons un projet supplémentaire dans Ansible Automation Platform, "Three Tier App / Dev", qui nous permettra d'installer une pile d'application de trois niveaux sur les trois noeuds CentOS. En outre, le projet fournit également un moyen de tester/vérifier la fonctionnalité des composants de l'application, ce que nous ferons avant la conversion à RHEL.
+- Nous utiliserons un projet supplémentaire dans Ansible Automation Platform, "Three Tier App / Dev", qui nous permettra d'installer une appliction 3-tiers sur les trois noeuds CentOS. En outre, le projet fournit également un moyen de tester/vérifier la fonctionnalité des composants de l'application, ce que nous ferons avant la conversion à RHEL.
 - Ensuite, nous utiliserons l'utilitaire Convert2RHEL pour convertir les noeuds CentOS en RHEL. Il y a beaucoup de sources d'information sur cet outil :
 - [Comment se convertir de CentOS ou Oracle Linux en RHEL](https://access.redhat.com/articles/2360841) (Jan 2021)
 - [Convertir des CentOS en RHEL avec Convert2RHEL et Satellite](https://www.redhat.com/en/blog/converting-centos-rhel-convert2rhel-and-satellite) (mars 2020)
@@ -33,7 +33,7 @@ Choses à considérer si vous faites ceci dans dev/test/stage-beta/prod :
 
 | **Une note sur l'utilisation de Satellite vs. Ansible Automation Plateforme pour ce...**<br>  |
 | ------------- |
-| Invlut avec Satellite 6, les [System ROLES pour RHEL](https://access.redhat.com/articles/3050101) (une collection de roles Ansible) qui permet de faire des tâches administratives automatisées. Satellite peuit être utilisé pour convertir et mettre à jour un suytème d'exploitation Linux, toute fois, un abonnement à Ansible Automation Platform est requis pour éxécuter des conversions et mises à jour plus complexes.  L'utilisation conjointe de ces deux solutions vous permet de disposer du meilleur outil pour votre travail :<br>- Gestion de contenu (Satellite)<br>- Corrections d'OS et environnements d'exploitation standardisés (Satellite)<br>- Provisionnement : Système d'exploitation, services d'infrastructure et applications/autres (Satellite and/or Ansible Automation Platform)<br>- Configuration de l'infrastructure et des applications (Ansible Automation Platform)<br><br>Reference: [Convertir des CentOS en RHEL avec Red Hat Satellite 6](https://www.redhat.com/en/blog/steps-converting-centos-linux-convert2rhel-and-red-hat-satellite) and [Leapp Upgrade with Satellite 6](https://www.redhat.com/en/blog/leapp-upgrade-using-red-hat-satellite-6)|
+| Inclut avec Satellite 6, les [System ROLES pour RHEL](https://access.redhat.com/articles/3050101) (une collection de roles Ansible) qui permet de faire des tâches administratives automatisées. Satellite peuit être utilisé pour convertir et mettre à jour un suytème d'exploitation Linux, toute fois, un abonnement à Ansible Automation Platform est requis pour éxécuter des conversions et mises à jour plus complexes.  L'utilisation conjointe de ces deux solutions vous permet de disposer du meilleur outil pour votre travail :<br>- Gestion de contenu (Satellite)<br>- Corrections d'OS et environnements d'exploitation standardisés (Satellite)<br>- Provisionnement : Système d'exploitation, services d'infrastructure et applications/autres (Satellite and/or Ansible Automation Platform)<br>- Configuration de l'infrastructure et des applications (Ansible Automation Platform)<br><br>Reference: [Convertir des CentOS en RHEL avec Red Hat Satellite 6](https://www.redhat.com/en/blog/steps-converting-centos-linux-convert2rhel-and-red-hat-satellite) and [Leapp Upgrade with Satellite 6](https://www.redhat.com/en/blog/leapp-upgrade-using-red-hat-satellite-6)|
 
 
 Ok, commençons...
@@ -63,7 +63,7 @@ Exemple : https://student1-sat.{random}.example.opentlc.com (Notez le -sat ajout
 Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout moment, sur la console Satellite, examiner les hôtes enregistrés en cliquant sur Hosts = Tous les hôtes. Rafraîchissez la page Hosts pour voir les changements qui survients en raison de l'automatisation effectuée via AAP.
 
 **Étapes:**
-#### 1\. Se connecter à la plate-forme d'automatisation ansible (AAP)
+#### 1\. Se connecter à la plate-forme d'automatisation Ansible (AAP)
 
 - Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface graphique AAP via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe suivant pour vous connecter : *admin / ^password_set_in_deploy_vars *
 
@@ -71,7 +71,7 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 
 - Lors d'une connexion réussie, vous pourrez voir le tableau de bord de la plate-forme d'automatisation Ansible.
 
-#### 2\. Installer une stack applicative 3-tiers
+#### 2\. Installer une application 3-tiers
 
 - Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
@@ -128,19 +128,19 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 
 ![centos-update](images/4-convert2rhel-centos-update.png)
 
-#### 6\. Vérifier la stack application 3-tiers sur les nœuds CentOS - post Centos update, pre Convert2RHEL
+#### 6\. Vérifier l'application 3-tiers sur les nœuds CentOS - post Centos update, pre Convert2RHEL
 
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Modèles**.
+- Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
-- Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONVERT2RHEL / 97 - Trois Tier Essai de fumée app** pour lancer le travail.
+- Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONVERT2RHEL / 97 - Three Tier App smoke test** pour lancer le travail.
 
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs psy CONVERT2RHEL / 97 - Trois Tier Essai de fumée app**. Cela prendra environ 30 secs pour terminer.
+- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONVERT2RHEL / 97 - Three Tier App smoke test**. Cela prendra environ 30 secs pour terminer.
 
 ![3tier-smoketest-2](images/4-convert2rhel-3tier-smoketest-2.png)
 
-#### 7\. Convert2RHEL - CentOS7 noeuds de développement pour les noeuds de développement RHEL7
+#### 7\. Convert2RHEL - CentOS7 noeuds de développement vers RHEL 7 noeuds de développement 
 
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Modèles**.
+- Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONVERT2RHEL / 03 - convert2rhel** pour lancer le travail.
 
@@ -148,40 +148,40 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 - choisissez la cible LE RHEL7_Dev
 
 
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs psy CONVERT2RHEL / 03 - convert2rhel**. Cela prendra environ 11 minutes pour terminer.
+- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONVERT2RHEL / 03 - convert2rhel**. Cela prendra environ 11 minutes pour terminer.
 
 > **NOTE** avec une pré-configuration, toute combinaison est possible
 ![conversion-select](images/4-convert2rhel-conversion-select.png)
-- cliquez sur **Suivant** pour continuer
+- cliquez sur **Next** pour continuer
 ![conversion-confirme](images/4-convert2rhel-conversion-confirm.png)
-- confirmer les variables CentOS et RHEL LE via les sélections de sondages et cliquez sur **Lancement**
+- confirmer les variables CentOS et RHEL LE via les sélections de sondages et cliquez sur **Launch**
 ![conversion-complete](images/4-convert2rhel-conversion-complete.png)
 
-Si vous regardez dans Satellite maintenant (**Hébergeurs Tous les hôtes**), vous verrez que toutes les notes CentOS ont été converties en noeuds RHEL 7.9.
+Si vous regardez dans Satellite maintenant (**Hosts > All Hosts**), vous verrez que toutes les noeuds CentOS ont été converties en noeuds RHEL 7.9.
 
 ![3tier-smoketest-2](images/4-convert2rhel-converstion-complete.png)
 
-#### 8\. Query Satellite pour obtenir la conversion des informations liées au noeud, définir les balises d'instance EC2 basées sur ces détails
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Modèles**.
+#### 8\. Interroger Satellite pour obtenir les détails relatifs au nœud de post-conversion, définir les étiquettes d'instance EC2 en fonction de ces détails
+- Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **EC2 / Set instance tags based on Satellite(Foreman) facts** pour lancer le travail.
 ![instance-tags](images/4-convert2rhel-instance-tags.png)
 
-- Le lancement de sélection vous conduira à la fenêtre de sortie **Jobs ☰ EC2 / Set instance tags basés sur des faits satellites (Foreman)**. Cela prendra environ 30 secs pour terminer.
+- Le lancement de sélection vous conduira à la fenêtre de sortie **Jobs > EC2 / Set instance tags based on Satellite(Foreman) facts**. Cela prendra environ 30 secs pour terminer.
 
 #### 9\. Mise à jour des inventaires via des sources dynamiques
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Modèles**.
+- Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
-- Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONTROLLER / Mise à jour des inventaires via des sources dynamiques** pour lancer le travail.
+- Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONTROLLER / Update inventories via dynamic sources** pour lancer le travail.
 - Sélectionnez "CentOS7" pour la mise à jour de l'inventaire
 - Sélectionnez "Dev" pour Choose Environment
-- Cliquez sur **Suivant**, confirmer les valeurs demandées, puis cliquez sur **Launch**
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs phy CONTROLLER / Mise à jour des inventaires via des sources dynamiques**. Cela prendra environ 30 secs pour terminer.
+- Cliquez sur **Next**, confirmer les valeurs demandées, puis cliquez sur **Launch**
+- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
 ![centos-inventory](images/4-convert2rhel-centos-inventory.png)
 
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Modèles**.
+- Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
-- Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONTROLLER / Mise à jour des inventaires via des sources dynamiques** pour lancer le travail.
+- Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONTROLLER / Update inventories via dynamic sources** pour lancer le travail.
 - template CONTROLLER / Mise à jour des inventaires via des sources dynamiques
 - Sélectionnez "RHEL7" pour l'inventaire
 - sélectionnez "Dev" pour Choose Environment
