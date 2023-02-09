@@ -86,54 +86,53 @@ Cette étape nous permettra de scanner un seul hôte rhel7 avec la politique ```
 
 - Cliquez sur l'icône BLUE 'Add' et sélectionnez 'Add job template' dans le menu déroulant. Remplir les détails comme suit:
 
-Nom: SATELLITE / Conformité - OpenSCAP_Configure
+        Name: SATELLITE / Compliance - OpenSCAP_Configure
 
-Type de travail: Cours
+        Job Type: Run
 
-Inventaire : Développement RHEL7 (Cliquez sur l'icône pour sélectionner.)
+        Inventory: RHEL7 Development (Cliquez sur l'icône de la loupe pour sélectionner.)
 
-Projet: Gestion automatisée (Cliquez sur l'icône pour sélectionner.)
+        Project: Automated Management (Cliquez sur l'icône de la loupe pour sélectionner.)
 
-Environnement d'exécution : environnement d'exécution d'atelier smart_mgmt (Cliquez sur
-icône de verre grossissant pour sélectionner.)
+        Execution Environment: smart_mgmt workshop execution environment (Cliquez sur l'icône de la loupe pour sélectionner.)
 
-Playbook: configure_openscap.yml (Cliquez sur la liste pour sélectionner.)
+        Playbook: configure_openscap.yml (Cliquez sur le menu déroulant pour sélectionner.)
 
-Pouvoirs : Atelier Credential et Credential
-(Cliquez sur l'icône pour sélectionner.)
-NOTE: Dans ce nouveau menu. Sélectionnez le bouton de radio Credential de l'atelier
-bouton. La catégorie choisie pour ceci est 'Machine'. Ensuite, utilisez le
-menu déroulant 'Sélection de catégorie' pour sélectionner Satellite_Collection.
-Vous choisirez le Credential Satellite. Cela vous fournira
-deux séries de pouvoirs. Choisir 'Sélectionner' sauvera vos changements
-et quitter le menu.
+        Credentials: Workshop Credential, et Satellite Credential
+        (Cliquez sur l'icône de la loupe pour sélectionner.)
+          REMARQUE : Dans ce nouveau menu. Sélectionnez le bouton radio Workshop Credential
+          La "Catégorie sélectionnée" est "Machine". Ensuite, utilisez le menu déroulant
+          Ensuite, utilisez à nouveau le menu déroulant " Selected Category " pour sélectionner Satellite_Collection.
+          Vous choisirez alors Satellite Credential. Vous obtiendrez ainsi
+          deux jeux d'informations d'identification. En cliquant sur "Sélectionner", vous enregistrez vos modifications
+          et vous quitterez le menu.
 
-Variables supplémentaires (Regardez l'espacement exact fourni ci-dessous. Notez que
-extra-vars que nous fournissons doivent être au format YAML):
+          Extra Variables (Respectez l'espacement exact indiqué ci-dessous. Notez que les
+          extra-vars que nous fournissons doivent être au format YAML):
 
----
-HOSTS: node1.example.com
-Policy_scan:
-- PCI_Compliance
+        ---
+        HOSTS: node1.example.com
+        Policy_scan:
+          - PCI_Compliance
 
 ![aap_template](images/1-compliance-aap2-template1.png)
 
-- Laissez le reste des champs vierges ou comme ils sont, et cliquez sur 'Save'. Vous pouvez
-puis sélectionnez 'Launch' pour déployer le modèle d'emploi.
+- Laissez le reste des champs vierges comme ils sont, et cliquez sur 'Save'. Vous pouvez
+ensuite sélectionnez 'Launch' pour déployer la job template.
 
 
-Sélectionnez le lancement vous mènera à la fenêtre de sortie **Jobs SATELLITE / Conformité - OpenSCAP_Configure** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 3 minutes pour terminer. Attendez que le modèle d'emploi se termine avant de passer à l'étape suivante.
+Vous allez être amené à la fenêtre de sortie **Jobs > SATELLITE / Compliance - OpenSCAP_Configure** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 3 minutes pour terminer. Attendez que l'éxécution se termine avant de passer à l'étape suivante.
 
 ![aap_output](images/1-compliance-aap2-OpenSCAP_Configure-output1.png)
 
 
-#### 6\. Naviguez de nouveau sur Satellite pour examiner le fichier de déclaration d'actifs (ARF).
+#### 6\. Naviguez de nouveau sur Satellite pour examiner le fichier Asset Reporting (ARF).
 
 - Survoler 'Hosts' dans le menu de la pane latérale, puis cliquez sur 'Reports'.
 
-- Cliquez sur le bouton 'Full Report', sous Actions, pour 'node1.example.com' pour évaluer
+- Cliquez sur le bouton 'Full Report', sous Actions, pour 'node1.example.com' afin de réviser le résultat
 
-- Retournez à la section **Aperçu général**. Vous pouvez trier par "Pass", "Fail", "Fixed", ou tout nombre de qualificatifs ainsi que des règles de groupe par "Severity"
+- Retournez à la section **Rule Overview**. Vous pouvez trier par "Pass", "Fail", "Fixed", ou par tout nombre de qualificatifs souhaité ainsi que des règles de groupe par "Severity"
 
 ![aap_arf](images/1-compliance-aap2-Satellite_ARF.png)
 
