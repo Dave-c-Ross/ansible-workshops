@@ -1,29 +1,29 @@
-Atelier automatisé de gestion intelligente: migration CentOS/RHEL et mise à niveau
+Atelier Automated Smart Management : migration de CentOS vers RHEL et mise à niveau
 ----------------------------------------------------------------------
 
 **Introduction**
-Cette trousse d'utilisation se concentrera sur la conversion de CentOS (bien que cela pourrait être un autre dérivé RHEL) à RHEL tout en maintenant une pile d'application de 3 niveaux (ne pas nuire). Bien que nous ne montrons ce processus que pour quelques systèmes, il peut être réduit à un plus grand nombre d'hôtes physiques, virtuels ou nuages en utilisant des dépôts de contenu fournis par [Satellite Red Hat](https://www.redhat.com/en/technologies/management/satellite) (inclus dans [Red Hat Smart Management](https://www.redhat.com/en/technologies/management/smart-management)). Le processus de conversion sera piloté avec l'automatisation construite et exécutée avec [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible).
+Ce cas d'utilisation se concentre sur la conversion de CentOS (bien qu'il puisse s'agir d'un autre dérivé de RHEL) vers RHEL tout en conservant une stack d'applications à trois niveaux. Bien que nous ne montrions ce processus que pour quelques systèmes, il peut être étendu à un plus grand nombre d'hôtes physiques, virtuels ou en nuage en utilisant les dépôts de contenu fournis par [Red Hat Satellite](https://www.redhat.com/en/technologies/management/satellite) (inclus dans [Red Hat Smart Management](https://www.redhat.com/en/technologies/management/smart-management)). Le processus de conversion sera piloté par l'automatisation construite et exécutée à l'aide de [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible).
 
 **Environnement**
 - Satellite 6.x, Ansible Automation Platform 4.x
 - 3x CentOS 7 instances
 - 3x RHEL 7 instances
 
-**Scénario d ' exercice**
+**Scénario d'exercice**
 - Exercice : Convertir des CentOS 7 en RHEL 7
 
 
-Vue d ' ensemble
+Vue d'ensemble
 -----------------------------------------------------------------
 
 **Résumé**
-- Rappelez-vous, lors de la configuration initiale de l'environnement, nous avons créé une sauvegarde des données de l'instance (dans le cas où un retour ou une restauration est nécessaire. Mieux vaut en sécurité que désolé.)
-- Nous utiliserons un projet supplémentaire dans Ansible Automation Platform, "Three Tier App / Dev", qui nous permettra d'installer (prendre une devination) une pile d'application de trois niveaux sur les trois noeuds CentOS. En outre, le projet fournit également un moyen de tester/vérifier la fonctionnalité des composants d'application, que nous effectuerons la conversion RHEL préalable.
-- Ensuite, nous employons l'utilitaire Convert2RHEL pour convertir les noeuds CentOS en RHEL. Il y a beaucoup de sources d'information sur cet utilitaire pratique, voici plusieurs de la note:
+- Rappelez-vous, lors de la configuration initiale de l'environnement, nous avons créé une sauvegarde des données de l'instance (dans le cas où un retour ou une restauration est nécessaire. Mieux vaut prévenir que guérir.)
+- Nous utiliserons un projet supplémentaire dans Ansible Automation Platform, "Three Tier App / Dev", qui nous permettra d'installer une pile d'application de trois niveaux sur les trois noeuds CentOS. En outre, le projet fournit également un moyen de tester/vérifier la fonctionnalité des composants de l'application, ce que nous ferons avant la conversion à RHEL.
+- Ensuite, nous utiliserons l'utilitaire Convert2RHEL pour convertir les noeuds CentOS en RHEL. Il y a beaucoup de sources d'information sur cet outil :
 - [Comment se convertir de CentOS ou Oracle Linux en RHEL](https://access.redhat.com/articles/2360841) (Jan 2021)
 - [Convertir des CentOS en RHEL avec Convert2RHEL et Satellite](https://www.redhat.com/en/blog/converting-centos-rhel-convert2rhel-and-satellite) (mars 2020)
 - [Convertir2RHEL : Comment mettre à jour les systèmes RHEL en place pour s'abonner à RHEL](https://www.redhat.com/en/blog/convert2rhel-how-update-rhel-systems-place-subscribe-rhel) (Jan 2020)
-- Vérifier la fonctionnalité de l'application stack post RHEL conversion.
+- Vérifier la fonctionnalité de la pile d'application tois niveaux post RHEL conversion.
 
 À considérer si cela se fait dans dev/test/stage-beta/prod:
 - Support de version(s) d'application développée(s) commerciale ou interne avec l'OS hôte
