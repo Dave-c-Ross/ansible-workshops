@@ -74,17 +74,17 @@ Cette étape dans le workflow ajoute votre première Job Template qui exécute u
 
 Cliquez sur Suivant et sur Save. 
 
-- Ajouter le dernier noeud en survolant 'SATELLITE / RHEL- Promote Content View' et en sélectionnant l'icône +. Dans la fenêtre pop-up, sélectionnez 'On Success', puis Suivant. Ajoutez le modèle de travail 'SERVER / RHEL7 - Patch', laissez 'Convergence' à 'Any' à nouveau et sélectionnez Suivant. Ce modèle a également une enquête jointe. Vous devrez sélectionner dans la liste déroulante 'Sélectionner l'environnement' l'environnement que vous aimeriez patcher. Choisissez 'RHEL7_Dev'. La liste déroulante 'Check' est une sélection qui indique server_patch.yml qu'elle s'applique ou non aux mises à jour des serveurs de notre inventaire. Puisque nous voulons appliquer les correctifs, nous sélectionnerons 'Non'. Cliquez sur 'Suivant' au bas de la fenêtre et cliquez sur 'Save'.
+- Ajouter le dernier noeud en survolant 'SATELLITE / RHEL- Promote Content View' et en sélectionnant l'icône +. Dans la fenêtre pop-up, sélectionnez 'On Success', puis Suivant. Ajoutez la job template 'SERVER / RHEL7 - Patch', laissez 'Convergence' à 'Any' à nouveau et sélectionnez Next. Cete template à également un formulaire joint. Vous devrez sélectionner dans la liste déroulante 'Select Environment' l'environnement que vous aimeriez patcher. Choisissez 'RHEL7_Dev'. La liste déroulante 'Check' est une sélection qui indique à server_patch.yml s'il faut ou non appliquer les mises à jour aux serveurs de notre inventaire. Comme nous voulons appliquer les correctifs, nous allons sélectionner 'No'. Cliquez sur 'Next' en bas de la fenêtre et cliquez sur 'Save'.
 
-- Avant de pouvoir terminer le workflow, nous devons relier 'SERVER / RHEL7 - Fact Scan' à 'SERVER / RHEL7 - Patch' et couverture sur le succès. Passez sur 'SERVER / RHEL7 - Fact Scan' et cliquez sur l'icône de la chaîne. Cliquez ensuite sur la droite du nœud 'SERVER / RHEL7 - Patch' pour lier. Vous serez promu sur le menu du côté droit pour exécuter 'On Success'. Cliquez sur 'Save'. Vous devrez ensuite cliquer sur le bouton 'SERVER / RHEL7 - Patch', modifier le noeud et sélectionner 'ALL' depuis le basculement CONVERGENCE. Continuer avec Next, Next et Save.
+- Avant de pouvoir terminer le workflow, nous devons relier 'SERVER / RHEL7 - Fact Scan' à 'SERVER / RHEL7 - Patch' et couverture sur le succès. Passez sur 'SERVER / RHEL7 - Fact Scan' et cliquez sur l'icône de la chaîne. Cliquez ensuite sur la droite du nœud 'SERVER / RHEL7 - Patch' pour lier. Vous serez promu sur le menu du côté droit pour choisir 'On Success'. Cliquez sur 'Save'. Vous devrez ensuite cliquer sur le bouton 'SERVER / RHEL7 - Patch', modifier le noeud et sélectionner 'ALL' depuis le menu deroulant CONVERGENCE. Continuer avec Next, Next et Save.
 
 Votre workflow devrait ressembler à ce qui suit :
 
 ![workflow final](images/2-patching-aap2-workflow-final.png)
 
-Vous pouvez maintenant sauvegarder et sortir le modèle de workflow.
+Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
-#### 3\. Se connecter au satellite
+#### 3\. Se connecter à Satellite
 
 - Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface satellite via le lien trouvé dans l'environnement ci-dessus
 
@@ -94,42 +94,42 @@ Vous pouvez maintenant sauvegarder et sortir le modèle de workflow.
 
 ![Tableau de bord par satellite](images/2-patching-aap2-Satellite-dashboard.png)
 
-#### 4\. Exploring the Satellite host configuration
+#### 4\. Exploration de la configuration de l'hôte Satellite
 
-- Hover over 'Hosts' et sélectionnez 'Content Hosts'. Observer la sécurité multiple, correction de bugs, améliorations et mises à jour de paquets disponibles pour chaque serveur, qui variera selon la date de l'atelier. De plus, prenez note de l'environnement du cycle de vie.
+- Passez la souris sur "Hôtes" et sélectionnez 'Content Hosts'. Observer la sécurité multiple, correction de bugs, améliorations et mises à jour de paquets disponibles pour chaque serveur, qui variera selon la date de l'atelier. De plus, prenez note de l'environnement du cycle de vie.
 
 ![Hébergeurs de contenu satellite](images/2-patching-aap2-Satellite-contenthosts.png)
 
 
-- Naviguez sur 'Content' et sélectionnez 'Content Views'. Puisque les serveurs avec lesquels nous travaillons sont RHEL7 sélectionnez la vue sur le contenu RHEL7. Nous avons peut-être besoin de publier une nouvelle version de vision du contenu, cependant, nous avons installé cela dans le cadre de notre workflow! (Note : votre version de vue de contenu peut différer de cet exemple, c'est OK)
+- Naviguez sur 'Content' et sélectionnez 'Content Views'. Puisque les serveurs avec lesquels nous travaillons sont RHEL7 sélectionnez la vue sur le contenu RHEL7. Il se peut que nous devions publier une nouvelle version du Content View, mais nous l'avons configuré dans le cadre de notre flux de travail ! (Remarque : votre version du content view peut différer de cet exemple, c'est normal).
 
 ![Satellite RHEL7 CV](images/2-patching-aap-Satellite-CV-RHEL7.png)
 
-- Cliquez sur 'Content' puis 'Content Views' et sélectionnez RHEL7. Remarquez la nouvelle version de vue de contenu.
+- Cliquez sur 'Content' puis 'Content Views' et sélectionnez RHEL7. Remarquez la nouvelle version du content view.
 
-- Naviguez aux hôtes Tous les hôtes et sélectionnez node1.example.com. Sélectionnez l'onglet « contenu » sous Détails. Remarquez la errata installable; voici votre nombre d'erreurs avant de lancer votre workflow patch.
+- Naviguez sur Hosts > All Hosts et selectionnez node1.example.com. Sélectionnez l'onglet « content » sous Détails. C'est votre nombre d'errata avant d'exécuter votre flux de travail de patch.
 
-#### 5\. Naviguez à Ansible et lancez le travail de workflow
+#### 5\. Naviguez à Ansible et lancez le travail du workflow
 
-- Cliquez sur les modèles pour trouver le modèle 'SATELLITE / Patching Workflow'. Vous pouvez soit cliquer sur la fusée à droite du modèle, soit sélectionner le modèle et sélectionner LAUNCH. (ils font la même chose).
+- Cliquez sur Templates pour trouver la job template 'SATELLITE / Patching Workflow'. Vous pouvez soit cliquer sur la fusée à droite de la template, soit sélectionner la template et sélectionner LAUNCH. (ils font la même chose).
 
-- Observez le travail en Ansible. Vous devez attendre que ce flux de travail se termine avant de passer à l'étape suivante. Ce workflow devrait prendre ~ 5 minutes pour terminer. Regarder les boîtes vertes en expansion et contracter dans chacun des nœuds de workflow. La boîte de noeuds sera verte lorsque l'étape est terminée - vous pouvez également dépasser un noeud de workflow pour voir un statut.
+- Observez le démarrage de la tâche dans Ansible. Vous devez attendre que ce flux de travail se termine avant de passer à l'étape suivante. Ce workflow devrait prendre ~ 5 minutes pour terminer. Observez les boîtes vertes qui s'étendent et se contractent dans chacun des nœuds de flux de travail. La case du nœud devient verte lorsque l'étape est terminée - vous pouvez également passer la souris sur un nœud de flux de travail pour voir son statut.
 
 ![AAP Workflow in progress](images/2-patching-aap2-workflow-in-progress.png)
 
 #### 6\. Naviguez vers Satellite pour examiner l'automatisation intelligente
 
-- Cliquez sur 'Content' puis 'Content Views' et sélectionnez RHEL7. Remarquez la nouvelle version de vue de contenu.
+- Cliquez sur 'Content' puis 'Content Views' et sélectionnez RHEL7. Remarquez la nouvelle version du content view.
 
-- Naviguez aux hôtes Tous les hôtes et sélectionnez node1.example.com. Sélectionnez l'onglet « contenu » sous Détails. Notez que la errata installable a diminué. Cela indique que nous avons appliqué nos mises à jour.
+- Naviguez vers Hosts > All Hosts et selectionnez node1.example.com. Sélectionnez l'onglet « content » sous Détails. Notez que les errata installables ont diminué. Cela indique que nous avons appliqué nos mises à jour.
 
 ![errata réduite](images/2-patching-aap2-Satellite-reduced-installable-errata.png)
 
-- Vous pouvez remarquer que toutes les questions ne sont pas corrigées. Ceci est pour mettre en valeur que vous pouvez exclure les mises à jour basées sur le type. Dans ce cas, nous ne repousserons pas les mises à jour pour les modifications du noyau. Cela peut bien sûr être configurable par l'utilisation du module yum dans le patch serveur
+- Vous pouvez remarquer que tous les problèmes ne sont pas résolus. C'est pour montrer que vous pouvez exclure des mises à jour en fonction du type. Dans ce cas, nous n'envoyons pas de mises à jour pour les modifications du noyau. Ceci peut bien sûr être configuré en utilisant le module yum dans le patch serveur.
 
 ![patchs du noyau exclus](images/2-patching-aap2-server-patching-kernel-exclude.png)
 
 #### 7\. End Lab
 
-- Tu as fini le labo.
+- Félicitions, vou avez terminé le laboratoire ! 
 - Continuer à [Exercice 3: CentOS/RHEL migration et mise à niveau](../3-convert2rhel/README.fr.md), OU [Retour à la page principale de l'atelier](../README.fr.md)
