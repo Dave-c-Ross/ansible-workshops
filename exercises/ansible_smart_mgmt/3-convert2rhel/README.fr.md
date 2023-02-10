@@ -236,14 +236,14 @@ Créez un workflow intégrant les job template créés ci-dessus dans un workflo
   - Forker le repo Automated Smart Management sur votre compte GitHub personnel
 Avant de commencer, vous devez forker le repo Automated Smart Management sur votre compte GitHub personnel.  Si vous n'avez pas de compte GitHub individuel, vous devrez en créer un pour continuer. L'utilisation d'un système de gestion du code source (SCM) est essentielle pour les concepts d'"infrastructure en tant que code" présentés dans cet exercice de laboratoire, et dans ce cas, GitHub est notre SCM.
 
-Une fois connecté à [GitHub](https://github.com) allez sur le repo [Red Hat Partner Tech repo for Automated Smart Management](https://github.com/redhat-partner-tech/automated-smart-management). Ensuite, sur la page Répo de gestion intelligente automatisée, en haut, en haut à droite de la page, cliquez sur "Fork". Cela créera une repo "forked" Automated Smart Management dans votre compte GitHub personnel.
+Une fois connecté à [GitHub](https://github.com) allez sur le repo [Red Hat Partner Tech repo for Automated Smart Management](https://github.com/redhat-partner-tech/automated-smart-management). Ensuite, sur la page Automated Smart Management repo page, en haut, en haut à droite de la page, cliquez sur "Fork". Cela créera une repo "forked" Automated Smart Management dans votre compte GitHub personnel.
 
-[Changer le projet "Gestion automatisée" dans AAP pour utiliser votre nouvelle repo clonée](https://github.com/your-github-username/automated-smart-management.git). Les fichiers suivants sont quelques bons endroits pour commencer à chercher à voir où vous pouvez ajuster les balises d'instance Extra Vars pour sélectionner/filtrer les instances particulières qu'un gabarit d'emploi/joubook obtient couru contre:
+[Changer le projet "Gestion automatisée" dans AAP pour utiliser votre nouvelle repo clonée](https://github.com/your-github-username/automated-smart-management.git). Les fichiers suivants sont de bons points de départ pour voir où vous pouvez ajuster les balises d'instance Extra Vars pour sélectionner/filtrer les instances particulières sur lesquelles une jobn template/playbook est exécuté :
 
 `group_vars/control/inventories.yml`
 
 `group_vars/control/job_templates.yml`
 
-Une fois les mises à jour faites, engagez et poussez ces changements à la repo clonée, suivie par la mise en œuvre du modèle d'emploi "SETUP / Controller", qui va propager les changements à AAP lui-même.
+Une fois les mises à jour faites, commetez et poussez ces changements vers le repo cloné, suivie par l'éxécution de la job template "SETUP / Controller", qui va propager les changements à AAP lui-même.
 ...
 .
