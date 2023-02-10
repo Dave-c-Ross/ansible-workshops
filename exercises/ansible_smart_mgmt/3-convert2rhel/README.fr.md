@@ -144,9 +144,8 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONVERT2RHEL / 03 - convert2rhel** pour lancer le travail.
 
-- choisissez le groupe LE pour convertir CentOS7_Dev
-- choisissez la cible LE RHEL7_Dev
-
+      - Selectionnez LE group pour convertir CentOS7_Dev
+      - Sélectionnez LE target RHEL7_Dev
 
 - Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONVERT2RHEL / 03 - convert2rhel**. Cela prendra environ 11 minutes pour terminer.
 
@@ -173,62 +172,62 @@ Si vous regardez dans Satellite maintenant (**Hosts > All Hosts**), vous verrez 
 - Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONTROLLER / Update inventories via dynamic sources** pour lancer le travail.
-- Sélectionnez "CentOS7" pour la mise à jour de l'inventaire
-- Sélectionnez "Dev" pour Choose Environment
-- Cliquez sur **Next**, confirmer les valeurs demandées, puis cliquez sur **Launch**
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
+  - Sélectionnez "CentOS7" pour la mise à jour de l'inventaire
+  - Sélectionnez "Dev" pour Choose Environment
+  - Cliquez sur **Next**, confirmer les valeurs demandées, puis cliquez sur **Launch**
+  - Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
 ![centos-inventory](images/4-convert2rhel-centos-inventory.png)
 
 - Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONTROLLER / Update inventories via dynamic sources** pour lancer le travail.
-- template CONTROLLER / Mise à jour des inventaires via des sources dynamiques
-- Sélectionnez "RHEL7" pour l'inventaire
-- sélectionnez "Dev" pour Choose Environment
-- Cliquez sur **Suivant**, confirmer les valeurs demandées, puis cliquez sur **Launch**
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs phy CONTROLLER / Mise à jour des inventaires via des sources dynamiques**. Cela prendra environ 30 secs pour terminer.
+  - template CONTROLLER / Mise à jour des inventaires via des sources dynamiques
+  - Sélectionnez "RHEL7" pour l'inventaire
+    - sélectionnez "Dev" pour Choose Environment
+    - Cliquez sur **Suivant**, confirmer les valeurs demandées, puis cliquez sur **Launch**
+- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
 ![rhel-inventory](images/4-convert2rhel-rhel-inventory.png)
 
 - Si vous regardez dans **Inventoires RHEL7 Development**, vous verrez maintenant que les noeuds[1-6] sont dans l'inventaire.
 ![rhel-inventory](images/4-convert2rhel-converstion-hosts.png)
 
 #### 10\. Créer un credential RHEL converti
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Pouvoirs**.
-- Cliquez sur ![template](images/4-convert2rhel-copy-template-icon.png) à droite de **Atelier Credential** pour copier le justificatif.
+- Utilisez le menu du volet latéral à gauche pour sélectionner **Credentials**.
+- Cliquez sur ![template](images/4-convert2rhel-copy-template-icon.png) à droite de **Workshop Credential** pour copier le credential.
 
 ![credential-copy](images/4-convert2rhel-workshop-credential-copy.png)
 
 - Cliquez sur le nouveau **Workshop Credential @ some-timestamp**
 
 - Cliquez sur **Edit** en bas à gauche.
-- Modifier le nom pour **Converti RHEL Credential**
-- Changer le nom d'utilisateur de "ec2-user" à "centos"
+  - Modifier le nom pour **Converted RHEL Credential**
+  - Changer le nom d'utilisateur de "ec2-user" à "centos"
 
 ![convert-RHEL-credential](images/4-convert2rhel-workshop-credential.png)
 
 - Cliquez sur **Save**
 
-#### 11\. Copy template CONVERT2RHEL / 97 - Three Tier App smoke test to template CONVERT2RHEL / 97 - Three Tier App smoke test / RHEL7 Development
-- Utilisez le menu de la poêle latérale sur la gauche pour sélectionner **Modèles**.
+#### 11\. Copiez la template CONVERT2RHEL / 97 - Three Tier App smoke test vers template CONVERT2RHEL / 97 - Three Tier App smoke test / RHEL7 Development
+- Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
-- Cliquez sur ![template](images/4-convert2rhel-copy-template-icon.png) à droite de **CONVERT2RHEL / 97 - Trois Tier Essai de fumée app** pour copier le modèle.
+- Cliquez sur ![template](images/4-convert2rhel-copy-template-icon.png) à droite de **CONVERT2RHEL / 97 - Three Tier App smoke test** pour copier la template.
 
 ![template-copy](images/4-convert2rhel-template-copy-2.png)
 
-- Cliquez sur le nouveau modèle d'emploi **CONVERT2RHEL / 97 - Trois Tier Test de la fumée d'application @ certains-timestamp**
+- Cliquez sur la nouvelle job template **CONVERT2RHEL / 97 - Three Tier App smoke test @ some-timestamp**
 
 - Cliquez sur **Edit** en bas à gauche.
-- Modifier le nom pour **CONVERT2RHEL / 97 - Trois Tier Essai de fumée d'application / Développement RHEL7**
-- Cliquez sur ![lookup](images/4-convert2rhel-lookup-icon.png) dans Inventaire et sélectionnez le bouton radio pour **RHEL7 Development**, suivie par **Sélection**.
-- Cliquez sur ![lookup](images/4-convert2rhel-lookup-icon.png) sous Pouvoirs et sélectionnez le bouton radio pour **Converti RHEL Credential**, suivi par **Sélection**.
-- Examiner les changements, puis faire défiler vers le bas à gauche, cliquez sur **Save**
-- Cliquez sur **Lancement** pour exécuter le nouveau modèle d'emploi **CONVERT2RHEL / 97 - Trois test de fumée d'application / RHEL7 Development**
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs psy CONVERT2RHEL / 97 - Trois Tier Essai de fumée d'application / Développement RHEL7**. Cela prendra environ 30 secs pour terminer.
+  - Modifier le nom pour **CONVERT2RHEL / 97 - Three Tier App smoke test / RHEL7 Development**
+  - Cliquez sur ![lookup](images/4-convert2rhel-lookup-icon.png) dans Inventaire et sélectionnez le bouton radio pour **RHEL7 Development**, suivie par **Sélect**.
+  - Cliquez sur ![lookup](images/4-convert2rhel-lookup-icon.png) sous Credentials et sélectionnez le bouton radio pour **Converted RHEL Credential**, suivi par **Select**.
+  - Examiner les changements, puis faire défiler vers le bas à gauche, cliquez sur **Save**
+  - Cliquez sur **Launch** pour exécuter la nouvelle job template **CONVERT2RHEL / 97 - Three Tier App smoke test / RHEL7 Development**
+  - L'éxécution vous conduira à la fenêtre de sortie **Jobs > CONVERT2RHEL / 97 - Three Tier App smoke test / RHEL7 Development**. Cela prendra environ 30 secs pour terminer.
 
 ![3tier-smoketest-3](images/4-convert2rhel-3tier-smoketest-3.png)
 
 
-Les Trois Tier Le modèle de test de fumée d'application aurait dû être complété avec succès, ce qui montre que nous avons pu terminer la migration de CentOS 7 à RHEL 7, et lorsque ce processus a été terminé, notre application 3 paliers a encore fonctionné.
+La job template Three Tier App smoke devrait se compléter avec succès, ce qui démontre que nous avons compéter la migration de CentOS 7 à RHEL 7 avec succès.
 
 > **EXTRA CREDIT - Convertir2RHEL workflow template**
 Créez un modèle de workflow intégrant les modèles autonomes ci-dessus dans un workflow complet de conversion CentOS à RHEL!
