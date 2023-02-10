@@ -229,14 +229,14 @@ Si vous regardez dans Satellite maintenant (**Hosts > All Hosts**), vous verrez 
 
 La job template Three Tier App smoke devrait se compléter avec succès, ce qui démontre que nous avons compéter la migration de CentOS 7 à RHEL 7 avec succès.
 
-> **EXTRA CREDIT - Convertir2RHEL workflow template**
-Créez un modèle de workflow intégrant les modèles autonomes ci-dessus dans un workflow complet de conversion CentOS à RHEL!
+> **Lab supplémentaire - Convert2RHEL workflow template**
+Créez un workflow intégrant les job template créés ci-dessus dans un workflow complet de conversion CentOS à RHEL!
 
->**EXTRA CREDIT - Infrastructure-as-Code "Choose Your Own Adventure"**
-- Réplique de gestion intelligente automatisée pour chaque compte GitHub
-Avant de commencer, vous aurez besoin de télécharger la repo Automated Smart Management dans votre compte GitHub personnel. Si vous n'avez pas de compte GitHub individuel, vous devrez créer un pour procéder. L'utilisation d'un système de gestion de code source (SCM) est au cœur des concepts « infrastructure en tant que code » contenus dans cet exercice de laboratoire, et dans ce cas, GitHub est notre SCM.
+>**Lab supplémentaire - Infrastructure-as-Code "Choisir votre propre aventure"**
+  - Forker le repo Automated Smart Management sur votre compte GitHub personnel
+Avant de commencer, vous devez forker le repo Automated Smart Management sur votre compte GitHub personnel.  Si vous n'avez pas de compte GitHub individuel, vous devrez en créer un pour continuer. L'utilisation d'un système de gestion du code source (SCM) est essentielle pour les concepts d'"infrastructure en tant que code" présentés dans cet exercice de laboratoire, et dans ce cas, GitHub est notre SCM.
 
-Une fois connecté à [GitHub](https://github.com) naviguer jusqu'à la repo [Red Hat Partner Tech repo for Automated Smart Management](https://github.com/redhat-partner-tech/automated-smart-management). Ensuite, sur la page Répo de gestion intelligente automatisée, en haut, en haut à droite de la page, cliquez sur "Fork". Cela créera une repo "forked" Automated Smart Management dans votre compte GitHub personnel.
+Une fois connecté à [GitHub](https://github.com) allez sur le repo [Red Hat Partner Tech repo for Automated Smart Management](https://github.com/redhat-partner-tech/automated-smart-management). Ensuite, sur la page Répo de gestion intelligente automatisée, en haut, en haut à droite de la page, cliquez sur "Fork". Cela créera une repo "forked" Automated Smart Management dans votre compte GitHub personnel.
 
 [Changer le projet "Gestion automatisée" dans AAP pour utiliser votre nouvelle repo clonée](https://github.com/your-github-username/automated-smart-management.git). Les fichiers suivants sont quelques bons endroits pour commencer à chercher à voir où vous pouvez ajuster les balises d'instance Extra Vars pour sélectionner/filtrer les instances particulières qu'un gabarit d'emploi/joubook obtient couru contre:
 
