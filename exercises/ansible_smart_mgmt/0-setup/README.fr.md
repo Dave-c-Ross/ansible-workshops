@@ -64,7 +64,7 @@ Vous serez conduit à la fenêtre de sortie **Jobs > SETUP / Controller** où vo
 
 Lorsque que terminé, vous verrez un statut réussi ainsi qu'un PLAY RECAP en bas de l'écran.
 
-- Retourner au **Templates** sur le volet de gauche.
+- Retourner au menu **Templates** en utilisant le volet de gauche.
 
 La job **SETUP / Controller** créera plusieurs Job Template qui seront utiles tout au long de cet atelier.
 
