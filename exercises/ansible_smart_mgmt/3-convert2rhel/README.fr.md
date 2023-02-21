@@ -106,7 +106,7 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 
 - Examiner les changements, puis en bas à gauche, cliquez sur **Save**
 - Vérifier le changement de nom de la template, ainsi que les réglages de tag dans le **Variables** section puis cliquez sur **Launch**
-- Le lancement de sélection vous emmènera à la fenêtre de sortie **Jobs psy CONVERT2RHEL / 01 - Take node snapshot / CentOS7 Development** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 5 minutes pour terminer.
+- Le lancement de la tâche vous emmènera à la fenêtre de sortie **Jobs psy CONVERT2RHEL / 01 - Take node snapshot / CentOS7 Development** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 5 minutes pour terminer.
 
 ![centos-snapshot](images/4-convert2rhel-centos-snapshot.png)
 
