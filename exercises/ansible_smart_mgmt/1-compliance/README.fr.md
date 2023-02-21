@@ -26,7 +26,7 @@ Exercice
 
 #### 1\. Se connecter à Satellite
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Satellite fourni, puis connectez-vous en utilisant la nomenclature suivante: *admin /*
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Satellite fourni, puis connectez-vous avec l'utilisateur admin.
 
 ![login screen](images/1-compliance-aap2-Satellite_login.png)
 
