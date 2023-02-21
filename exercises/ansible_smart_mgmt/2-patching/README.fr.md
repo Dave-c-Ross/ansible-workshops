@@ -109,11 +109,11 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
 - Naviguez sur Hosts > All Hosts et selectionnez node1.example.com. Sélectionnez l'onglet « content » sous Détails. C'est votre nombre d'errata avant d'exécuter votre flux de travail de patch.
 
-#### 5\. Naviguez à Ansible et lancez le travail du workflow
+#### 5\. Allez sur Ansible Automation Platform et lancez le workflow de patch
 
-- Cliquez sur Templates pour trouver la job template 'SATELLITE / Patching Workflow'. Vous pouvez soit cliquer sur la fusée à droite de la template, soit sélectionner la template et sélectionner LAUNCH. (ils font la même chose).
+- Cliquez sur Templates et chercher la job template 'SATELLITE / Patching Workflow'. Vous pouvez soit cliquer sur la fusée à droite de la template, soit sélectionner la template et sélectionner LAUNCH.
 
-- Observez le démarrage de la tâche dans Ansible. Vous devez attendre que ce flux de travail se termine avant de passer à l'étape suivante. Ce workflow devrait prendre ~ 5 minutes pour terminer. Observez les boîtes vertes qui s'étendent et se contractent dans chacun des nœuds de flux de travail. La case du nœud devient verte lorsque l'étape est terminée - vous pouvez également passer la souris sur un nœud de flux de travail pour voir son statut.
+- Observez le démarrage de la tâche dans Ansible. Vous devez attendre que ce flux de travail se termine avant de passer à l'étape suivante. Ce workflow devrait prendre ~ 6 minutes pour terminer. Observez les boîtes vertes qui s'étendent et se contractent dans chacun des nœuds de flux de travail. La case du nœud devient verte lorsque l'étape est terminée - vous pouvez également passer la souris sur un nœud de flux de travail pour voir son statut.
 
 ![AAP Workflow in progress](images/2-patching-aap2-workflow-in-progress.png)
 
@@ -125,7 +125,7 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
 ![errata réduite](images/2-patching-aap2-Satellite-reduced-installable-errata.png)
 
-- Vous pouvez remarquer que tous les problèmes ne sont pas résolus. C'est pour montrer que vous pouvez exclure des mises à jour en fonction du type. Dans ce cas, nous n'envoyons pas de mises à jour pour les modifications du noyau. Ceci peut bien sûr être configuré en utilisant le module yum dans le patch serveur.
+- Vous pouvez remarquer que tous les problèmes ne sont pas résolus. C'est pour montrer que vous pouvez exclure des mises à jour en fonction du type. Dans ce cas, nous n'avons pas appliquer les mises à jour du kernel. Ceci peut bien sûr être configuré en utilisant le module yum dans le patch serveur.
 
 ![patchs du noyau exclus](images/2-patching-aap2-server-patching-kernel-exclude.png)
 
