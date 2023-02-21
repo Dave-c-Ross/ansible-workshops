@@ -46,7 +46,7 @@ Cette étape montre l'exécution d'une Job Template. Cette étape utilise 7 Job 
 
 - Utilisez le menu du volêt latérale sur la gauche pour sélectionner **Templates**.
 
-- D'abord, vous devriez voir deux **Templates** nommés **SETUP / Satellite** et **SETUP / Controller**.
+- Vous devriez voir deux **Templates** nommés **SETUP / Satellite** et **SETUP / Controller**.
 
 ![templates](images/0-setup-aap2-templates.png)
 
