@@ -28,7 +28,7 @@ Exercice
 
 #### 1\. Se connecter à la plate-forme d'automatisation Ansible
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Ansible Automation Platform via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe suivant pour vous connecter: admin / ^password vous avez été fourni
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Ansible Automation Platform. 
 
 ![login screen](images/2-patching-aap2-login.png)
 
@@ -44,7 +44,7 @@ Maintenant, nous allons commencer à configurer un workflow qui comprend la publ
 
 - Inscrire le nom "SATELLITE / Patching Workflow" et cliquez sur Save (il n'y a pas d'autres options nécessaires à sélectionner sur cette page).
 
-- Cela devrait ouvrir un flux de travail vierge, offrant de commencer à le construire en choisissant le bouton Start vert. Vous pouvez toujours revenir à ce flux de travail à partir du modèle en sélectionnant l'onglet 'Visualizer'.
+- Cela devrait ouvrir un flux de travail vierge, offrant de commencer à le construire en choisissant le bouton vert Start. Vous pouvez toujours revenir à ce flux de travail à partir de template en sélectionnant l'onglet 'Visualizer'.
 
 ![workflow start](images/2-patching-aap2-workflow-start.png)
 
@@ -52,13 +52,13 @@ Maintenant, nous allons commencer à configurer un workflow qui comprend la publ
 
 ![workflow inventory source](images/2-patching-aap2-workflow-inventory-source.png)
 
-- Séléctionner Start de nouveau et ajouter un second noeud (Cliquez sur l'affiche "+"). Dans le menu déroulant "Node Type" sélectionnez "Job Template" puis regardez en haut et cliquez sur "SATELLITE / RHEL - Publiez Content View". Laissez "Convergence" sur "Any". Cliquez sur Next - un formulaire est joint à cette template, vous aurez besoin de sélectionner le bon content view pour les serveurs que nous allons patcher. Sélectionnez le contente view 'RHEL7' et cliquez sur 'next'. Vous devrez alors confirmer l'aperçu de ce noeud de workflow en cliquant sur 'Save':
+- Séléctionner Start de nouveau et ajouter un second noeud (Cliquez sur l'affiche "+"). Dans le menu déroulant "Node Type" sélectionnez "Job Template" puis sélectionnez "SATELLITE / RHEL - Publish Content View". Laissez "Convergence" sur "Any". Cliquez sur Next - un formulaire est joint à cette template, vous aurez besoin de sélectionner le bon content view pour les serveurs que nous allons patcher. Sélectionnez le contente view 'RHEL7' et cliquez sur 'next'. Vous devrez alors confirmer l'aperçu de ce noeud de workflow en cliquant sur 'Save':
 
 ![workflow inventory source](images/2-patching-aap2-workflow-publish-CV-preview.png)
 
 Cette étape dans le workflow ajoute votre première Job Template qui exécute un playbook appelé 'satellite_publish.yml'.
 
-- Ajouter le troisième noeud au flux de travail en survolant votre nœud d'inventaire 'EC2 Dynamic Source - RHEL7 Development' et sélectionnez l'icône + pour générer un autre noeud de workflow. Dans la fenêtre pop-up, sélectionnez 'On Success', puis Suivant. Dans la fenêtre de suivi, Node Type sera 'Job Template'. Sélectionnez 'SERVER / RHEL7 - Fact Scan', laissez 'Convergence' à 'Any' et sélectionnez Suivant. Cette étape dans le workflow analysera les noeuds dans notre inventaire satellite pour vérifier les mises à jour des paquets et errata. Vous n'avez pas besoin de limiter le modèle d'emploi, alors cliquez sur Suivant, puis Enregistrer pour terminer la configuration node.
+- Ajouter le troisième noeud au flux de travail en survolant votre nœud d'inventaire 'EC2 Dynamic Source - RHEL7 Development' et sélectionnez l'icône + pour générer un autre noeud de workflow. Dans la fenêtre pop-up, sélectionnez 'On Success', puis Suivant. Dans la fenêtre de suivi, Node Type sera 'Job Template'. Sélectionnez 'SERVER / RHEL7 - Fact Scan', laissez 'Convergence' à 'Any' et sélectionnez Suivant. Cette étape dans le workflow analysera les noeuds dans notre inventaire satellite pour vérifier les mises à jour des paquets et errata. Vous n'avez pas besoin de limiter la job template, alors cliquez sur Suivant, puis Enregistrer pour terminer la configuration.
 
 À ce stade, votre flux de travail devrait ressembler à ce qui suit:
 
