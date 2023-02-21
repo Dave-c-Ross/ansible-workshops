@@ -86,7 +86,7 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
 #### 3\. Se connecter à Satellite
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface satellite via le lien trouvé dans l'environnement ci-dessus
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface Satellite
 
 ![Accès par satellite](images/2-patching-aap2-Satellite-login.png)
 
