@@ -78,7 +78,7 @@ Maintenant, nous allons commencer à configurer notre serveur Satellite pour pou
 
 ![aap_dashboard](images/1-compliance-aap2-dashboard.png)
 
-#### 5\. Configurer et lancer une template Ansible pour lancer un scan OpenSCAP.
+#### 5\. Configurer et lancer une template Ansible pour exécuter une analyse OpenSCAP.
 
 Cette étape nous permettra de scanner un seul hôte rhel7 avec la politique ```PCI_Compliance``` que nous avons configurée sur Satellite.
 
