@@ -189,7 +189,7 @@ Ensuite, connectez-vous à Satellite pour effectuer la vérification.
 
 ![](https://lh4.googleusercontent.com/xQc7AudiblHnV7vKVFv0_055wfoeODtDltSS1_C6yV_ppF3rmfN_B78dw-Lo-OvN2ey5aE20UkuxnqYPgtmwQ0pqDdXuHqZZ4yI1rV0_E8PaFeLJHBuTR2FngYQwtutxRzpOSrEe)
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface Satellite via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe suivant pour vous connecter : *admin / ^password_set_in_deploy_vars PHP*. Une fois connecté, vous verrez la page principale.
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface Satellite via le lien trouvé dans l'environnement du lab. Et utilisez le nom d'utilisateur et le mot de passe mentionné sur la page. Une fois connecté, vous verrez la page principale.
 
 - Cliquez sur **Hosts** -> **All Hosts** pour valider que trois nœuds de serveur RHEL7 et trois CentOS7 sont enregistrés sur Satellite.
 
