@@ -167,7 +167,7 @@ Si vous regardez dans Satellite maintenant (**Hosts > All Hosts**), vous verrez 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **EC2 / Set instance tags based on Satellite(Foreman) facts** pour lancer le travail.
 ![instance-tags](images/4-convert2rhel-instance-tags.png)
 
-- Le lancement de sélection vous conduira à la fenêtre de sortie **Jobs > EC2 / Set instance tags based on Satellite(Foreman) facts**. Cela prendra environ 30 secs pour terminer.
+- Le lancement de la tâche vous conduira à la fenêtre de sortie **Jobs > EC2 / Set instance tags based on Satellite(Foreman) facts**. Cela prendra environ 30 secs pour terminer.
 
 #### 9\. Mise à jour des inventaires via des sources dynamiques
 - Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
@@ -176,20 +176,20 @@ Si vous regardez dans Satellite maintenant (**Hosts > All Hosts**), vous verrez 
   - Sélectionnez "CentOS7" pour la mise à jour de l'inventaire
   - Sélectionnez "Dev" pour Choose Environment
   - Cliquez sur **Next**, confirmer les valeurs demandées, puis cliquez sur **Launch**
-  - Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
+  - Le lancement de la tâche vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
 ![centos-inventory](images/4-convert2rhel-centos-inventory.png)
 
 - Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONTROLLER / Update inventories via dynamic sources** pour lancer le travail.
-  - template CONTROLLER / Mise à jour des inventaires via des sources dynamiques
+  - Choisir la template CONTROLLER / Update inventories via dynamic sources
   - Sélectionnez "RHEL7" pour l'inventaire
     - sélectionnez "Dev" pour Choose Environment
     - Cliquez sur **Suivant**, confirmer les valeurs demandées, puis cliquez sur **Launch**
-- Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
+- Le lancement de la tâche vous conduira à la fenêtre de sortie **Jobs > CONTROLLER / Update inventories via dynamic sources**. Cela prendra environ 30 secs pour terminer.
 ![rhel-inventory](images/4-convert2rhel-rhel-inventory.png)
 
-- Si vous regardez dans **Inventoires RHEL7 Development**, vous verrez maintenant que les noeuds[1-6] sont dans l'inventaire.
+- Si vous regardez dans **Inventories RHEL7 Development**, vous verrez maintenant que les noeuds[1-6] sont dans l'inventaire.
 ![rhel-inventory](images/4-convert2rhel-converstion-hosts.png)
 
 #### 10\. Créer un credential RHEL converti
