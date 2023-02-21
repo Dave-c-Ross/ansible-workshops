@@ -111,7 +111,7 @@ Ensuite, retournez à Templates et exécutez la job template **SERVER / CentOS7 
 
 ![centos-register-confirm](images/0-setup-aap2-centos-register-confirm.png)
 
-- Sélectionnez **Launch** pour exécuter le modèle de travail.
+- Sélectionnez **Launch** pour exécuter la job template.
 
 Vous serez emmené à la fenêtre de sortie **SERVER / CentOS7 - Register** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 1 min pour terminer.
 
