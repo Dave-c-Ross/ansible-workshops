@@ -139,14 +139,14 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 
 ![3tier-smoketest-2](images/4-convert2rhel-3tier-smoketest-2.png)
 
-#### 7\. Convert2RHEL - CentOS7 noeuds de développement vers RHEL 7 noeuds de développement 
+#### 7\. Convert2RHEL - noeuds CentOS7 de développement vers noeuds RHEL 7 de développement 
 
 - Utilisez le menu du volet latéral à gauche pour sélectionner **Templates**.
 
 - Cliquez sur ![lancement](images/4-convert2rhel-aap2-launch.png) à droite de **CONVERT2RHEL / 03 - convert2rhel** pour lancer le travail.
 
-      - Selectionnez LE group pour convertir CentOS7_Dev
-      - Sélectionnez LE target RHEL7_Dev
+      - Selectionnez le groupe pour convertir : CentOS7_Dev
+      - Sélectionnez le groupe target :  RHEL7_Dev
 
 - Sélectionnez le lancement vous conduira à la fenêtre de sortie **Jobs > CONVERT2RHEL / 03 - convert2rhel**. Cela prendra environ 11 minutes pour terminer.
 
