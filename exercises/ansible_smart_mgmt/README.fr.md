@@ -22,7 +22,7 @@ Les exercices sont auto-explicatifs et guident les participants tout au long de 
 
 Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer plus en détails l'automatisation, les bases d'Ansible et les sujets des exercices. La présentation de l'atelier est située ici, en anglais [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf), en français : 
 
-Jetez également un coup d'oeil à notre présentation sur les meilleurs pratiques avec Ansible:
+Jetez également un coup d'oeil à notre présentation sur les meilleurs pratiques avec Ansible: en anglais
 [Pratiques exemplaires disponibles](../../decks/ansible_best_practices.pdf)
 
 ## Planification du temps
