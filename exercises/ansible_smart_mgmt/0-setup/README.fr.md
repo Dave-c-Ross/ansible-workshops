@@ -24,7 +24,7 @@ Environnement
     * **Exemple:** `https://student1-sat.01d1.example.opentlc.com` (Notez le -sat ajouté à l'URL)
     * Connexion en utilisant le même usager et login que précédemment  
 
-> **NOTE** Il y a un certain nombre d'avertissements (comme [DEPRECATION WARNING]) lors de l'éxecution du playbook - ceux-ci peuvent être ignorés en toute sécurité.
+> **NOTE** Il y a un certain nombre d'avertissements (comme [DEPRECATION WARNING]) lors de l'éxecution de certains playbook - ceux-ci peuvent être ignorés en toute sécurité.
 
 Exercice
 --------
