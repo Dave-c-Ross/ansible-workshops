@@ -60,7 +60,7 @@ Maintenant, nous allons commencer à configurer notre serveur Satellite pour pou
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP3.png)
 
-- Il faut établir un calendrier pour créer une nouvelle politique de conformité. Vous pouvez sélectionner "Weekly" et "Monday" aux fins de cet exercice. Puis cliquez sur "Next"
+- Il faut établir un calendrier afin de déterminer à quelle fréquence l'analyse serait éxécutée. Vous pouvez sélectionner "Weekly" et "Monday" aux fins de cet exercice. Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP4.png)
 
