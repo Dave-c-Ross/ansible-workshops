@@ -120,7 +120,7 @@ Cette étape nous permettra de scanner un seul hôte rhel7 avec la politique ```
 ensuite sélectionnez 'Launch' pour éxecuter la job template.
 
 
-Vous allez être amené à la fenêtre de sortie **Jobs > SATELLITE / Compliance - OpenSCAP_Configure** où vous pourrez suivre chaque tâche exécutée dans le cadre du playbook. Cela prendra environ 3 minutes pour terminer. Attendez que l'éxécution se termine avant de passer à l'étape suivante.
+Vous allez être amené à la fenêtre de sortie **Jobs > SATELLITE / Compliance - OpenSCAP_Configure** où vous pourrez suivre chaque tâche exécutée. Cela prendra environ 3 minutes pour terminer. Attendez que l'éxécution se termine avant de passer à l'étape suivante.
 
 ![aap_output](images/1-compliance-aap2-OpenSCAP_Configure-output1.png)
 
