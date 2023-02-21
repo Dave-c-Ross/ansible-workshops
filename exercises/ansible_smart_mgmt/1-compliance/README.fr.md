@@ -197,17 +197,17 @@ Cette étape élargira notre analyse OpenSCAP pour ajouter un autre profil de co
 
 ![aap_output](images/1-compliance-aap2-OpenSCAP_Configure-output2-fix.png)
 
-#### 8\. Naviguez de nouveau sur Satellite pour examiner le fichier Asset Reporting File (ARF).
+#### 8\. Naviguez de nouveau sur Satellite pour examiner le rapport d'analyse (fichier Asset Reporting File (ARF)).
 
 - Survoler "Hosts" dans le menu à gauche de l'écran, puis cliquez sur "Reports".
 
-- Notez que nous avons passé à six scans, 2 scans pour chaque noeud, un pour PCI_Compliance et l'autre pour STIG_Compliance.
+- Notez que nous avons six nouvelles analyses, 2 analyses pour chaque noeud, un pour PCI_Compliance et l'autre pour STIG_Compliance.
 
 ![aap_arf](images/1-compliance-aap2-Satellite_ARF-Final.png)
 
-- Chaque rapport peut être examiné indépendamment des autres analyses de nœuds et les mesures correctives proposées par les résultats des règles peuvent être effectuées conformément aux exigences de vos propres politiques internes.
+- Chaque rapport peut être examiné indépendamment des autres analyses 
 
 #### 9\. Fin du laboratoire
 
-- Félicitations, tu as terminé le laboratoire ! 
+- Félicitations, vous avez terminé le laboratoire ! 
 - Continuer à [Exercice 2: Gestion du Patch / OS](../2-patching/README.fr.md), OU [Retour à la page principale de l'atelier](../README.fr.md)
