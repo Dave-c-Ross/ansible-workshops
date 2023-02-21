@@ -52,7 +52,7 @@ Maintenant, nous allons commencer à configurer notre serveur Satellite pour pou
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP1.png)
 
-- Créer le nom de la politique "PCI_Compliance" et fournir la description que vous souhaitez. Puis cliquez sur "Suivant"
+- Créer le nom de la politique "PCI_Compliance" et fournir la description que vous souhaitez. Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP2.png)
 
