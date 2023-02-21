@@ -102,9 +102,8 @@ Cette étape nous permettra de scanner un seul hôte rhel7 avec la politique ```
         (Cliquez sur l'icône de la loupe pour sélectionner.)
           REMARQUE : Dans ce nouveau menu. Sélectionnez le bouton radio Workshop Credential
           La "Catégorie sélectionnée" est "Machine". Ensuite, utilisez le menu déroulant
-          Ensuite, utilisez à nouveau le menu déroulant " Selected Category " pour sélectionner Satellite_Collection.
-          Vous choisirez alors Satellite Credential. Vous obtiendrez ainsi
-          deux jeux d'informations d'identification. En cliquant sur "Sélectionner", vous enregistrez vos modifications
+          Selected Category " pour sélectionner Satellite_Collection.
+          Vous choisirez alors Satellite Credential. Vous aurez ainsi deux type de credential sélectionnés. En cliquant sur "Select", vous enregistrez vos modifications
           et vous quitterez le menu.
 
           Extra Variables (Respectez l'espacement exact indiqué ci-dessous. Notez que les
