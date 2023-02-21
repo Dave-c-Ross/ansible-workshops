@@ -173,7 +173,7 @@ Exécutez la job template **CONTROLLER / Update inventories via dynamic sources*
 
 ![centos-inventory-complete](images/0-setup-aap2-centos-inventory-complete.png)
 
-#### 4\. Inventaires dynamiques - examiner les inventaires alimentés par des sources dynamiques - Mis à jour
+#### 4\. Inventaires dynamiques - examiner les inventaires alimentés par des sources dynamiques - Mise à jour
 
 > **NOTE** Maintenant que les modèles de mise à jour de l'inventaire dynamique ont été exécutés, naviguez à l'emplacement des Inventories dans AAP et examinez les inventaires suivants:
 >
