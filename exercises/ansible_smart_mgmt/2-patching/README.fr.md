@@ -129,7 +129,7 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
 ![patchs du noyau exclus](images/2-patching-aap2-server-patching-kernel-exclude.png)
 
-#### 7\. End Lab
+#### 7\. Fin du laboratoire
 
 - Félicitions, vou avez terminé le laboratoire ! 
 - Continuer à [Exercice 3: CentOS/RHEL migration et mise à niveau](../3-convert2rhel/README.fr.md), OU [Retour à la page principale de l'atelier](../README.fr.md)
