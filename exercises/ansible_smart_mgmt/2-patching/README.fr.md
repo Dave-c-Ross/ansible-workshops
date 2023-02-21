@@ -117,7 +117,7 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
 ![AAP Workflow in progress](images/2-patching-aap2-workflow-in-progress.png)
 
-#### 6\. Naviguez vers Satellite pour examiner l'automatisation intelligente
+#### 6\. Alelz dans Satellite pour voir le résultat
 
 - Cliquez sur 'Content' puis 'Content Views' et sélectionnez RHEL7. Remarquez la nouvelle version du content view.
 
@@ -125,7 +125,7 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
 ![errata réduite](images/2-patching-aap2-Satellite-reduced-installable-errata.png)
 
-- Vous pouvez remarquer que tous les problèmes ne sont pas résolus. C'est pour montrer que vous pouvez exclure des mises à jour en fonction du type. Dans ce cas, nous n'avons pas appliquer les mises à jour du kernel. Ceci peut bien sûr être configuré en utilisant le module yum dans le patch serveur.
+- Vous pouvez remarquer que tous les problèmes ne sont pas résolus. C'est pour montrer que vous pouvez exclure des mises à jour en fonction du type. Dans ce cas, nous n'avons pas appliquer les mises à jour du kernel. Ceci peut bien sûr être configuré en utilisant le module yum dans le playbook server_patch.yml
 
 ![patchs du noyau exclus](images/2-patching-aap2-server-patching-kernel-exclude.png)
 
