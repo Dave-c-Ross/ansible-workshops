@@ -23,12 +23,12 @@ Vue d'ensemble
 - Ensuite, nous utiliserons l'utilitaire Convert2RHEL pour convertir les noeuds CentOS en RHEL. Il y a beaucoup de sources d'information sur cet outil :
 - [Comment convertir de CentOS ou Oracle Linux en RHEL](https://access.redhat.com/articles/2360841) (Jan 2021)
 - [Convertir des CentOS en RHEL avec Convert2RHEL et Satellite](https://www.redhat.com/en/blog/converting-centos-rhel-convert2rhel-and-satellite) (mars 2020)
-- [Convertir2RHEL : Comment mettre à jour les systèmes RHEL en place pour s'abonner à RHEL](https://www.redhat.com/en/blog/convert2rhel-how-update-rhel-systems-place-subscribe-rhel) (Jan 2020)
+- [Convertir2RHEL : Comment mettre à jour les systèmes RHEL en place pour s'abonner à RHEL](https://www.redhat.com/en/blog/introduction-convert2rhel-now-officially-supported-convert-rhel-systems-rhel) (Avril 2021)
 - Nous vérifirons si l'application 3-tiers fonctionne toujours après la conversion. 
 
 Choses à considérer si vous faites ceci dans dev/test/stage-beta/prod :
 - Support de la ou des versions d'applications commerciales et/ou développées en interne avec le système d'exploitation hôte.
-- Modifications du chargeur de démarrage
+- Modifications du chargeur de démarrage (bootloader)
 - Connexion réseau et synchronisation du temps réseau
 
 
