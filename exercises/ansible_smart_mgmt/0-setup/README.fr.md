@@ -85,7 +85,7 @@ Vous serez emmené à la fenêtre de sortie **CONVERT2RHEL / 01 - Take node snap
 
 ![node-snapshot-complete](images/0-setup-aap2-node-snapshot-complete.png)
 
-Ensuite, retournez à Templates et exécutez le modèle de travail **SERVER / RHEL7 - Register** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
+Ensuite, retournez à Templates et exécutez la Job Template **SERVER / RHEL7 - Register** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
 - Vous serez présenté avec un formulaire. Remplissez ceci comme suit:
 
