@@ -154,7 +154,7 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 ![conversion-select](images/4-convert2rhel-conversion-select.png)
 - cliquez sur **Next** pour continuer
 ![conversion-confirme](images/4-convert2rhel-conversion-confirm.png)
-- confirmer les variables CentOS et RHEL LE via les sélections de sondages et cliquez sur **Launch**
+- confirmer les variables CentOS et RHEL via les sélections de sondages et cliquez sur **Launch**
 ![conversion-complete](images/4-convert2rhel-conversion-complete.png)
 
 Si vous regardez dans Satellite maintenant (**Hosts > All Hosts**), vous verrez que toutes les noeuds CentOS ont été converties en noeuds RHEL 7.9.
