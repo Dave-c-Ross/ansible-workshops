@@ -66,7 +66,7 @@ Lorsque que terminé, vous verrez un statut réussi ainsi qu'un PLAY RECAP en ba
 
 - Retourner au menu **Templates** en utilisant le volet de gauche.
 
-La job **SETUP / Controller** créera plusieurs Job Template qui seront utiles tout au long de cet atelier.
+La job **SETUP / Controller** a créé plusieurs Job Template qui seront utilisés tout au long de cet atelier.
 
 ![templates-iac](images/0-setup-aap2-templates-iac.png)
 
