@@ -96,7 +96,7 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 
 #### 4\. Exploration de la configuration de l'hôte Satellite
 
-- Passez la souris sur "Hôtes" et sélectionnez 'Content Hosts'. Observer la sécurité multiple, correction de bugs, améliorations et mises à jour de paquets disponibles pour chaque serveur, qui variera selon la date de l'atelier. De plus, prenez note de l'environnement du cycle de vie.
+- Passez la souris sur "Hosts" et sélectionnez 'Content Hosts'. Observer les correction de bugs, améliorations et mises à jour de paquets disponibles pour chaque serveur, qui variera selon la date de l'atelier. De plus, prenez note de l'environnement du cycle de vie.
 
 ![Hébergeurs de contenu satellite](images/2-patching-aap2-Satellite-contenthosts.png)
 
