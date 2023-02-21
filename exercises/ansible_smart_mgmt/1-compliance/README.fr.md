@@ -64,7 +64,7 @@ Maintenant, nous allons commencer à configurer notre serveur Satellite pour pou
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP4.png)
 
-- Les étapes 5, 6 et 7 dans le cadre de la nouvelle politique de conformité peuvent utiliser des valeurs par défaut. Cliquez sur "Next" pour "Location", et "Organisations". Puis à "Hostgroups" cliquez sur "Submit"
+- Laissez les valeurs par défaut pour les étapes 5, 6 et 7. Cliquez sur "Next" pour "Location", et "Organizations". Puis à "Hostgroups" cliquez sur "Submit"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP5.png)
 
