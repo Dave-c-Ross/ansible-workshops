@@ -129,15 +129,16 @@ Vous allez être amené à la fenêtre de sortie **Jobs > SATELLITE / Compliance
 
 - Survoler 'Hosts' dans le menu de la pane latérale, puis cliquez sur 'Reports'.
 
-- Cliquez sur le bouton 'Full Report', sous Actions, pour 'node1.example.com' afin de réviser le résultat
+- Cliquez sur le bouton 'Full Report', sous Actions, pour 'node1.example.com' afin de réviser le résultat 
+
+- En sélectionnant une règle, vous trouverez d'autres renseignements concernant la validation effectuée ainsi qu'une description de la règle qui comprend des références de sécurité et des identifiants.
 
 - Retournez à la section **Rule Overview**. Vous pouvez trier par "Pass", "Fail", "Fixed", ou par tout nombre de qualificatifs souhaité ainsi que des règles de groupe par "Severity"
 
 ![aap_arf](images/1-compliance-aap2-Satellite_ARF.png)
 
-- Le choix d'une règle présente d'autres renseignements concernant la justification ainsi qu'une description de la règle qui comprend des références et des identifiants.
 - Maintenant, décochez tout sauf la case **fail**. Ensuite, faites défiler.
-cliquez sur l'échec "Prevent Login to Accounts With Empty Password"
+cliquez sur le test "Prevent Login to Accounts With Empty Password"
 
 - Si vous défilez la page, vous remarquerez plusieurs options de rémédiation, y compris
 un snippet 'Ansible'. Cliquez sur "show" à côté du "Remediation Ansible Snippett",
