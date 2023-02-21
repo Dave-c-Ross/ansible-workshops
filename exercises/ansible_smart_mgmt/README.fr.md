@@ -27,7 +27,7 @@ Jetez également un coup d'oeil à notre présentation sur les meilleurs pratiqu
 
 ## Planification du temps
 
-Le temps nécessaire pour faire les ateliers dépend fortement de plusieurs facteurs : le nombre de participants, la familiarité avec Linux en général et le nombre de discussions entre les ateliers.
+Le temps nécessaire pour faire les ateliers dépend fortement de plusieurs facteurs : le nombre de participants, la familiarité avec Linux en général et les discussions entre les ateliers.
 
 Cela dit, les exercices eux-mêmes devraient prendre environ 4 heures. Chaque laboratoire dure environ 30 à 45 minutes. La présentation qui accompagne elle-même ajoute ~1 heure.
 
