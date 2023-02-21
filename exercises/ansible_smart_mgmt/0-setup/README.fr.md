@@ -123,7 +123,7 @@ Vous serez conduit à la fenêtre de sortie **EC2 / Set instance tags based on S
 
 ![satellite-ec2-tags](images/0-setup-aap2-satellite-ec2-tags.png)
 
-> **REMARQUE** Pour la job template suivante, consultez la section **Variables** de la job template, en portant attention à la variable **group_tag_map**. Une correspondance entre les nœuds et les noms de groupe est définie. Les balises EC2 pour ces noms de groupe seront assignées aux noeuds définis et cela sera utilisé plus tard par la construction d'inventaire dynamique pour construire des groupes d'inventaires ansibles contenant les noeuds définis, c'est-à-dire. "frontends", "apps", "appdbs".
+> **REMARQUE** Pour la job template suivante, consultez la section **Variables** de la job template, en portant attention à la variable **group_tag_map**. Une correspondance entre les nœuds et les noms de groupe est définie. Les balises EC2 pour ces noms de groupe seront assignées aux noeuds définis et cela sera utilisé plus tard par la construction d'inventaire dynamique pour construire des groupes d'inventaires Ansible contenant les noeuds définis, c'est-à-dire. "frontends", "apps", "appdbs".
 
 Ensuite, exécutez la job template **EC2 / Set instance tag - AnsibleGroup** en cliquant sur le ![lancement](images/0-setup-aap2-launch.png) pour lancer.
 
