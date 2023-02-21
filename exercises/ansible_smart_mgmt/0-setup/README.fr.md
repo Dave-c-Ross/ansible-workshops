@@ -17,9 +17,9 @@ L'objectif de cet exercice est de configurer l'environnement du laboratoire en s
 Environnement
 ---------
 > **NOTE** Voici les URL *example*. Vos URLs de laboratoire étudiant et vos identifiants sont fournis depuis la page d'accueil des ateliers après votre enregistrement avec votre nom et votre courriel. 
-* Plateforme d'automatisation ansible
+* Plateforme d'automatisation Ansible (Automation Controller)
     * **Exemple:** `https://student1.01d1.example.opentlc.com`
-    * Ansible Automation Platform login/password de la page d'accueil des ateliers.
+    * Utilisez le nom d'usager et le mot de passe indiquer sur la page d'accueil (Automation Controller)
 * Adresse Satellite
     * **Exemple:** `https://student1-sat.01d1.example.opentlc.com` (Notez le -sat ajouté à l'URL)
     * Connexion par satellite/mot de passe (même que ci-dessus)
