@@ -101,7 +101,7 @@ Vous pouvez maintenant sauvegarder et sortir du modèle de workflow.
 ![Hébergeurs de contenu satellite](images/2-patching-aap2-Satellite-contenthosts.png)
 
 
-- Naviguez sur 'Content' et sélectionnez 'Content Views'. Puisque les serveurs avec lesquels nous travaillons sont RHEL7 sélectionnez la vue sur le contenu RHEL7. Il se peut que nous devions publier une nouvelle version du Content View, mais nous l'avons configuré dans le cadre de notre flux de travail ! (Remarque : votre version du content view peut différer de cet exemple, c'est normal).
+- Naviguez sur 'Content' et sélectionnez 'Content Views'. Puisque les serveurs avec lesquels nous travaillons sont RHEL7 sélectionnez la vue sur le contenu RHEL7. Afin de rendre des nouveaux correctifs disponible avec Satellite, il faut publier une nouvelle version du Content View, mais nous l'avons configuré dans le cadre de notre flux de travail ! (Remarque : votre version du content view peut différer de cet exemple, c'est normal).
 
 ![Satellite RHEL7 CV](images/2-patching-aap-Satellite-CV-RHEL7.png)
 
