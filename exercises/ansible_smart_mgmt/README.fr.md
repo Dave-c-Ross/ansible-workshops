@@ -11,7 +11,7 @@ Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Ma
 
 ## Cas d'utilisation
 
-Cet atelier se concentre actuellement sur ces trois principaux points sensibles :
+Cet atelier se concentre actuellement sur ces trois points sensibles de gestion d'un parc linux :
 - Conformité (OpenSCAP Scanning) et gestion de la vulnérabilité
 - Gestion des Patches/Paquetages
 - Conversion CentOS vers RHEL
@@ -20,7 +20,7 @@ Cet atelier se concentre actuellement sur ces trois principaux points sensibles 
 
 Les exercices sont auto-explicatifs et guident les participants tout au long de l'atelier. Tous les concepts sont expliqués lorsqu'ils sont introduits.
 
-Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer plus en détails l'automatisation, les bases d'Ansible et les sujets des exercices. La présentation de l'atelier est située au [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf).
+Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer plus en détails l'automatisation, les bases d'Ansible et les sujets des exercices. La présentation de l'atelier est située ici, en anglais [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf), en français : 
 
 Jetez également un coup d'oeil à notre présentation sur les meilleurs pratiques avec Ansible:
 [Pratiques exemplaires disponibles](../../decks/ansible_best_practices.pdf)
