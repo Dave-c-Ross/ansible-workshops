@@ -38,7 +38,7 @@ sur votre "Workshops Homepage".
 
 - Lors d'une connexion réussie, vous pourrez voir le tableau de bord de la plate-forme d'automatisation Ansible.
 
-- Utilisez le menu du volet latéral sur la gauche pour sélectionner **Projets** et examiner les deux projets nommés **Automated Management** et **Fact Scan**. Ces projets, ainsi que l'inventaire de l'atelier (**Inventories** -> **Workshop Inventory**) ont été mis en place pour vous pendant la création de l'environnement du laboratoire.
+- Utilisez le menu du volet latéral sur la gauche pour sélectionner **Projects** et examiner les deux projets nommés **Automated Management** et **Fact Scan**. Ces projets, ainsi que l'inventaire de l'atelier (**Inventories** -> **Workshop Inventory**) ont été mis en place pour vous pendant la création de l'environnement du laboratoire.
 
 #### 2\. Lancer des modèles de travail (job template) Ansible
 
