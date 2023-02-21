@@ -66,7 +66,7 @@ Notez que dans les étapes suivantes qui sont exécutées sur AAP, à tout momen
 **Étapes:**
 #### 1\. Se connecter à la plate-forme d'automatisation Ansible (AAP)
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface graphique AAP via le lien trouvé dans l'environnement ci-dessus. Et utilisez le nom d'utilisateur et le mot de passe suivant pour vous connecter : *admin / ^password_set_in_deploy_vars *
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface graphique AAP avec l'utilisateur admin. 
 
 ![login screen](images/4-convert2rhel-aap2-login.png)
 
