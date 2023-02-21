@@ -19,12 +19,12 @@ Vue d'ensemble
 
 **Résumé**
 - Rappelez-vous, lors de la configuration initiale de l'environnement, nous avons créé une sauvegarde (snapshot) des données de l'instance (dans le cas où un retour ou une restauration est nécessaire. Mieux vaut prévenir que guérir.)
-- Nous utiliserons un projet supplémentaire dans Ansible Automation Platform, "Three Tier App / Dev", qui nous permettra d'installer une appliction 3-tiers sur les trois noeuds CentOS. En outre, le projet fournit également un moyen de tester/vérifier la fonctionnalité des composants de l'application, ce que nous ferons avant la conversion à RHEL.
+- Nous utiliserons une job template dans Ansible Automation Platform, "Three Tier App / Dev", qui nous permettra d'installer une appliction 3-tiers sur les trois noeuds CentOS. En outre, le projet fournit également un moyen de tester/vérifier la fonctionnalité des composants de l'application, ce que nous ferons avant la conversion à RHEL.
 - Ensuite, nous utiliserons l'utilitaire Convert2RHEL pour convertir les noeuds CentOS en RHEL. Il y a beaucoup de sources d'information sur cet outil :
 - [Comment se convertir de CentOS ou Oracle Linux en RHEL](https://access.redhat.com/articles/2360841) (Jan 2021)
 - [Convertir des CentOS en RHEL avec Convert2RHEL et Satellite](https://www.redhat.com/en/blog/converting-centos-rhel-convert2rhel-and-satellite) (mars 2020)
 - [Convertir2RHEL : Comment mettre à jour les systèmes RHEL en place pour s'abonner à RHEL](https://www.redhat.com/en/blog/convert2rhel-how-update-rhel-systems-place-subscribe-rhel) (Jan 2020)
-- Vérifier la fonctionnalité de la pile d'application tois niveaux post RHEL conversion.
+- Nous vérifirons si l'application 3-tiers fonctionne toujours après la conversion. 
 
 Choses à considérer si vous faites ceci dans dev/test/stage-beta/prod :
 - Support de la ou des versions d'applications commerciales et/ou développées en interne avec le système d'exploitation hôte.
