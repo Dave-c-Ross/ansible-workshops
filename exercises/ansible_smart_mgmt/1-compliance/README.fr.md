@@ -147,9 +147,9 @@ la rémédiation sur les systèmes touchés.
 
 ![aap_arf](images/1-compliance-aap2-Satellite_ARF2.png)
 
-#### 7\. Extension des analyses de politiques d'OpenSCAP
+#### 7\. Extension des analyses OpenSCAP
 
-Cette étape élargira notre analyse politique OpenSCAP pour ajouter un autre profil de conformité XCCDF appelé ```STIG_Compliance```. Nous allons également nous étendre pour inclure tous les systèmes dans l'inventaire 'RHEL7 Development' en ajustant la variable supplémentaire 'HOSTS' à 'all' au lieu de spécifier un système unique.
+Cette étape élargira notre analyse OpenSCAP pour ajouter un autre profil de conformité XCCDF appelé ```STIG_Compliance```. Nous allons également étendre pour inclure tous les systèmes dans l'inventaire 'RHEL7 Development' en ajustant la variable supplémentaire 'HOSTS' à 'all' au lieu de spécifier un système unique.
 
 - Dans Satellite, passez par "Hosts" dans le menu à gauche de l'écran, puis cliquez sur "Policies".
 
@@ -167,17 +167,17 @@ Cette étape élargira notre analyse politique OpenSCAP pour ajouter un autre pr
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP8.png)
 
-- Il faut établir un calendrier pour créer une nouvelle politique de conformité. Vous pouvez sélectionner "Weekly" et "Monday" à des fins de laboratoire. Puis cliquez sur "Next"
+- Il faut établir un calendrier afin de déterminer à quelle fréquence l'analyse sera exécutée. Vous pouvez sélectionner "Weekly" et "Monday" à des fins de laboratoire. Puis cliquez sur "Next"
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP9.png)
 
-- Les étapes 5, 6 et 7 dans le cadre de la nouvelle politique de conformité peuvent utiliser des valeurs par défaut. Cliquez sur "Next" pour "Location", "Organisations", et "Hostgroups"
+- Laissez les valeurs par défaut pour les étapes 5, 6 et 7. Cliquez sur "Next" pour "Location", et "Organizations". Puis à "Hostgroups" cliquez sur "Submit
 
 ![satellite_policy](images/1-compliance-aap2-Satellite_SCAP10.png)
 
-- Maintenant, nous allons mettre à jour notre modèle d'emploi OpenSCAP_Configure dans Ansible Automation Platform et lancer un autre scanner de conformité PCI, plus le scan de conformité STIG.
+- Maintenant, nous allons mettre à jour notre template OpenSCAP_Configure dans Ansible Automation Platform et lancer un autre analayse de conformité qui va inclure PCI et la nouvelle analyse STIG. 
 - Dans Ansible Automation Platform, cliquez sur 'Templates' dans le menu de la pane latérale gauche
-- Sélectionnez la job template OpenSCAP_Configure, et cliquez sur éditer en bas de la job pour apporter des modifications aux « Variables Extra » :
+- Sélectionnez la job template Satellite/Compliiance - OpenSCAP_Configure, et cliquez sur éditer en bas de la job pour apporter des modifications aux « Variables Extra » :
 
         Extra Variables (Respectez l'espacement exact indiqué ci-dessous.
         Notez que les extra-vars que nous fournissons doivent être
@@ -191,7 +191,7 @@ Cette étape élargira notre analyse politique OpenSCAP pour ajouter un autre pr
 
 ![aap_template](images/1-compliance-aap2-template2-fix.png)
 
-- Laissez le reste des champs vierges comme ils sont, et cliquez sur 'Save'. Vous pouvez ensuite sélectionner 'Launch' pour éxécutez la job template.
+- Laissez le reste des champs comme ils sont, et cliquez sur 'Save'. Vous pouvez ensuite sélectionner 'Launch' pour éxécutez la job template.
 
 - L'éxécution va vous conduira à la fenêtre de sortie **Jobs > SATELLITE / Compliance - OpenSCAP_Configure**. Cela prendra environ 5 minutes pour terminer. Attendez que l'éxécution se termine avant de passer à l'étape suivante.
 
