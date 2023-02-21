@@ -64,7 +64,7 @@ Cette étape dans le workflow ajoute votre première Job Template qui exécute u
 
 ![workflow factscan](images/2-patching-aap2-workflow-factscan.png)
 
-- Il y a deux autres noeuds à ajouter à ce flux de travail. Sur le noeud 'SATELLITE / RHEL - Publish Content View' cliquez sur l'icône +. Dans la fenêtre pop-up, sélectionnez 'On Success' et ensuite Suivant. Ajoutez le modèle de travail 'SATELLITE / RHEL - Promote Content View' et laissez 'Convergence' à 'Any' à nouveau. Il y a un formulaire qui nécessite des variables pour le Content View, l'environnement actuel du cycle de vie et l'environnement du cycle de vie suivant. Aux fins de ce laboratoire, nous allons promouvoir Dev à QA.
+- Il y a deux autres noeuds à ajouter à ce flux de travail. Sur le noeud 'SATELLITE / RHEL - Publish Content View' cliquez sur l'icône +. Dans la fenêtre pop-up, sélectionnez 'On Success' et ensuite Suivant. Ajoutez la job template 'SATELLITE / RHEL - Promote Content View' et laissez 'Convergence' à 'Any' à nouveau. Il y a un formulaire qui nécessite des variables pour le Content View, l'environnement actuel du cycle de vie et l'environnement du cycle de vie suivant. Aux fins de ce laboratoire, nous allons promouvoir Dev à QA.
 
 - Sélectionnez RHEL7 pour 'Content View '
 
@@ -72,11 +72,11 @@ Cette étape dans le workflow ajoute votre première Job Template qui exécute u
 
 - Sélectionnez RHEL7_QA pour 'Next Lifecycle Environment '
 
-Cliquez sur Suivant et sur Save. 
+Cliquez sur Next et sur Save. 
 
 - Ajouter le dernier noeud en survolant 'SATELLITE / RHEL- Promote Content View' et en sélectionnant l'icône +. Dans la fenêtre pop-up, sélectionnez 'On Success', puis Suivant. Ajoutez la job template 'SERVER / RHEL7 - Patch', laissez 'Convergence' à 'Any' à nouveau et sélectionnez Next. Cete template à également un formulaire joint. Vous devrez sélectionner dans la liste déroulante 'Select Environment' l'environnement que vous aimeriez patcher. Choisissez 'RHEL7_Dev'. La liste déroulante 'Check' est une sélection qui indique à server_patch.yml s'il faut ou non appliquer les mises à jour aux serveurs de notre inventaire. Comme nous voulons appliquer les correctifs, nous allons sélectionner 'No'. Cliquez sur 'Next' en bas de la fenêtre et cliquez sur 'Save'.
 
-- Avant de pouvoir terminer le workflow, nous devons relier 'SERVER / RHEL7 - Fact Scan' à 'SERVER / RHEL7 - Patch' et couverture sur le succès. Passez sur 'SERVER / RHEL7 - Fact Scan' et cliquez sur l'icône de la chaîne. Cliquez ensuite sur la droite du nœud 'SERVER / RHEL7 - Patch' pour lier. Vous serez promu sur le menu du côté droit pour choisir 'On Success'. Cliquez sur 'Save'. Vous devrez ensuite cliquer sur le bouton 'SERVER / RHEL7 - Patch', modifier le noeud et sélectionner 'ALL' depuis le menu deroulant CONVERGENCE. Continuer avec Next, Next et Save.
+- Avant de pouvoir terminer le workflow, nous devons relier 'SERVER / RHEL7 - Fact Scan' à 'SERVER / RHEL7 - Patch' sur un succès. Passez sur 'SERVER / RHEL7 - Fact Scan' et cliquez sur l'icône de la chaîne. Cliquez ensuite sur la droite du nœud 'SERVER / RHEL7 - Patch' pour lier. Une nouvelle fenêtre vous permettera de choisir 'On Success'. Cliquez sur 'Save'. Vous devrez ensuite cliquer sur le bouton 'SERVER / RHEL7 - Patch', modifier le noeud et sélectionner 'ALL' depuis le menu deroulant CONVERGENCE. Continuer avec Next, Next et Save.
 
 Votre workflow devrait ressembler à ce qui suit :
 
