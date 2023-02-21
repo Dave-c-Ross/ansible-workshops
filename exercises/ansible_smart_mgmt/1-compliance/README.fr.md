@@ -84,7 +84,7 @@ Cette étape nous permettra de scanner un seul hôte rhel7 avec la politique ```
 
 - Dans Ansible Automation Platform cliquez sur 'Templates' dans le menu de la pane latérale gauche
 
-- Cliquez sur l'icône BLUE 'Add' et sélectionnez 'Add job template' dans le menu déroulant. Remplir les détails comme suit:
+- Cliquez sur le bouton en bleu 'Add' et sélectionnez 'Add job template' dans le menu déroulant. Remplir les détails comme suit:
 
         Name: SATELLITE / Compliance - OpenSCAP_Configure
 
