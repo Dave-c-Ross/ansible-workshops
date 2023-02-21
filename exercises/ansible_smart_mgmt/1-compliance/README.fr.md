@@ -125,7 +125,7 @@ Vous allez être amené à la fenêtre de sortie **Jobs > SATELLITE / Compliance
 ![aap_output](images/1-compliance-aap2-OpenSCAP_Configure-output1.png)
 
 
-#### 6\. Naviguez de nouveau sur Satellite pour examiner le fichier Asset Reporting (ARF).
+#### 6\. Aller de nouveau sur Satellite pour examiner le rapport de l'analyse Openscap (fichier Asset Reporting (ARF)).
 
 - Survoler 'Hosts' dans le menu de la pane latérale, puis cliquez sur 'Reports'.
 
