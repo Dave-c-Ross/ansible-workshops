@@ -42,7 +42,7 @@ sur votre "Workshops Homepage".
 
 #### 2\. Lancer des modèles de travail (job template) Ansible
 
-Cette étape montre l'exécution d'une Job Template. Cependant, cette étape utilise sept Job Templates pour initialiser la configuration de l'environnement du laboratoire.
+Cette étape montre l'exécution d'une Job Template. Cependant, cette étape utilise 7 Job Templates pour initialiser la configuration de l'environnement du laboratoire.
 
 - Utilisez le menu du volêt latérale sur la gauche pour sélectionner **Templates**.
 
