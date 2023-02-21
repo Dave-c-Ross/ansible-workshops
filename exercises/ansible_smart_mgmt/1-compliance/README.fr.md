@@ -70,7 +70,7 @@ Maintenant, nous allons commencer à configurer notre serveur Satellite pour pou
 
 #### 4\. Se connecter à la plate-forme d'automatisation Ansible
 
-- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Ansible via le lien trouvé dans votre environnement puis connectez-vous à l'aide de la nomenclature suivante: *admin /*
+- Utilisez un navigateur web sur votre ordinateur pour accéder à l'interface utilisateur Ansible via le lien trouvé dans votre environnement puis connectez-vous avec l'utilisateur admin. 
 
 ![login screen](images/1-compliance-aap2-login.png)
 
