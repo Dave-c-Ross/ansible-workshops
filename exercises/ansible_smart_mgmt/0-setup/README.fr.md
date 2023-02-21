@@ -22,7 +22,7 @@ Environnement
     * Utilisez le nom d'usager et le mot de passe indiqués sur la page d'accueil (Automation Controller)
 * Adresse de Satellite
     * **Exemple:** `https://student1-sat.01d1.example.opentlc.com` (Notez le -sat ajouté à l'URL)
-    * Connexion par satellite/mot de passe (même que ci-dessus)
+    * Connexion en utilisant le même usager et login que précédemment  
 
 > **NOTE** Il y a un certain nombre d'avertissements (comme [DEPRECATION WARNING]) lors de l'éxecution du playbook - ceux-ci peuvent être ignorés en toute sécurité.
 
