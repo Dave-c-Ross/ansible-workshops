@@ -133,7 +133,7 @@ Vous serez emmené à la fenêtre de sortie **EC2 / Set instance tag - AnsibleGr
 
 #### 3\. Inventaires dynamiques - comprendre les inventaires alimentés par des sources dynamiques
 
-> **NOTE** Avant d'exécuter les jobs templatesde mise à jour dynamique des inventaires dans les prochaines étapes, naviguez d'abord à l'emplacement des inventaires dans AAP et examinez les inventaires suivants:
+> **NOTE** Avant d'exécuter les jobs templates de mise à jour dynamique des inventaires dans les prochaines étapes, naviguez d'abord à l'emplacement des inventaires dans AAP et examinez les inventaires suivants:
 >
 >     - ALL Development => Hosts
 >     - CentOS7 Development => Hosts
