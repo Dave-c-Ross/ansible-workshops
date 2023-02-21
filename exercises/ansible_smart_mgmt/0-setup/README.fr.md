@@ -70,7 +70,7 @@ La job **SETUP / Controller** a créé plusieurs Job Template qui seront utilis�
 
 ![templates-iac](images/0-setup-aap2-templates-iac.png)
 
-Maintenant que nous avons plusieurs Job Templates à notre disposition, nous aurons besoin d'en exécuter quatre autres afin de terminer la configuration.
+Maintenant que nous avons plusieurs Job Templates à notre disposition, nous aurons besoin d'en exécuter 4 autres afin de terminer la configuration.
 
 Exécutez la job **SATELLITE / RHEL - Publish Content View** en cliquant sur le bouton !(images/0-setup-aap2-launch.png) pour lancer.  Répondez aux questionnaire sur le content view à publier, sélectionnez **RHEL7**
 - Sélectionnez **Next** pour examiner les paramêtres d'éxécution de la job, puis cliquez sur **Launch** pour exécuter le tout. 
