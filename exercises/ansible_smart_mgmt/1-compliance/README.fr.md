@@ -210,4 +210,4 @@ Cette étape élargira notre analyse OpenSCAP pour ajouter un autre profil de co
 #### 9\. Fin du laboratoire
 
 - Félicitations, vous avez terminé le laboratoire ! 
-- Continuer à [Exercice 2: Gestion du Patch / OS](../2-patching/README.fr.md), OU [Retour à la page principale de l'atelier](../README.fr.md)
+- Continuer à [Exercice 2: Gestion des correctifs ](../2-patching/README.fr.md), OU [Retour à la page principale de l'atelier](../README.fr.md)
