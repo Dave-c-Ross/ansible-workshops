@@ -26,9 +26,9 @@ Vue d'ensemble
   - [Convertir2RHEL : Comment mettre à jour les systèmes RHEL en place pour s'abonner à RHEL](https://www.redhat.com/en/blog/introduction-convert2rhel-now-officially-supported-convert-rhel-systems-rhel) (Avril 2021)
 - Nous vérifirons si l'application 3-tiers fonctionne toujours après la conversion. 
 
-Choses à considérer si vous faites ceci dans dev/test/stage-beta/prod :
-- Support de la ou des versions d'applications commerciales et/ou développées en interne avec le système d'exploitation hôte.
-- Modifications du chargeur de démarrage (bootloader)
+Choses à considérer si vous faites ceci dans vos environnents d'entreprise : 
+- Support de la ou des versions d'applications commerciales et/ou développées en interne avec le système d'exploitation de destination.
+- Modifications du chargeur de démarrage (bootloader), tout dépend des versions ciblées. 
 - Connexion réseau et synchronisation du temps réseau
 
 
