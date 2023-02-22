@@ -231,20 +231,21 @@ Si vous regardez dans Satellite maintenant (**Hosts > All Hosts**), vous verrez 
 La job template Three Tier App smoke devrait se compléter avec succès, ce qui démontre que nous avons compéter la migration de CentOS 7 à RHEL 7 avec succès.
 
 > **Lab supplémentaire - Convert2RHEL workflow template**
-Créez un workflow intégrant les job template créés ci-dessus dans un workflow complet de conversion CentOS à RHEL!
+
+Créez un workflow intégrant les job templates créés ci-dessus dans un workflow complet de conversion CentOS à RHEL!
 
 >**Lab supplémentaire - Infrastructure-as-Code "Choisir votre propre aventure"**
   - Forker le repo Automated Smart Management sur votre compte GitHub personnel
-Avant de commencer, vous devez forker le repo Automated Smart Management sur votre compte GitHub personnel.  Si vous n'avez pas de compte GitHub individuel, vous devrez en créer un pour continuer. L'utilisation d'un système de gestion du code source (SCM) est essentielle pour les concepts d'"infrastructure en tant que code" présentés dans cet exercice de laboratoire, et dans ce cas, GitHub est notre SCM.
+Avant de commencer, vous devez forker le repo Automated Smart Management sur votre compte GitHub personnel.  Si vous n'avez pas de compte GitHub, vous devrez en créer un pour continuer. L'utilisation d'un système de gestion du code source (SCM) est essentielle pour les concepts d'"infrastructure en tant que code" présentés dans cet exercice de laboratoire, et dans ce cas, GitHub est notre SCM.
 
 Une fois connecté à [GitHub](https://github.com) allez sur le repo [Red Hat Partner Tech repo for Automated Smart Management](https://github.com/redhat-partner-tech/automated-smart-management). Ensuite, sur la page Automated Smart Management repo page, en haut, en haut à droite de la page, cliquez sur "Fork". Cela créera une repo "forked" Automated Smart Management dans votre compte GitHub personnel.
 
-[Changer le projet "Gestion automatisée" dans AAP pour utiliser votre nouvelle repo clonée](https://github.com/your-github-username/automated-smart-management.git). Les fichiers suivants sont de bons points de départ pour voir où vous pouvez ajuster les balises d'instance Extra Vars pour sélectionner/filtrer les instances particulières sur lesquelles une jobn template/playbook est exécuté :
+[Changer le projet "Gestion automatisée" dans AAP pour utiliser votre nouvelle repo clonée](https://github.com/your-github-username/automated-smart-management.git). Les fichiers suivants sont de bons points de départ pour voir où vous pouvez ajuster les Extra Vars pour sélectionner/filtrer les instances spécifiques sur lesquelles une job template/playbook sera exécuté :
 
 `group_vars/control/inventories.yml`
 
 `group_vars/control/job_templates.yml`
 
-Une fois les mises à jour faites, commetez et poussez ces changements vers le repo cloné, suivie par l'éxécution de la job template "SETUP / Controller", qui va propager les changements à AAP lui-même.
+Une fois les mises à jour faites, commettez et poussez ces changements vers le repo cloné, suivie par l'éxécution de la job template "SETUP / Controller", qui va propager les changements à AAP lui-même.
 ...
 .
