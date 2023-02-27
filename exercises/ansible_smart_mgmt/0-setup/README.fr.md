@@ -1,6 +1,10 @@
 Atelier Automated Smart Management : Configurer l'environnement du laboratoire
 ====================================================================
 
+**Lisez ceci dans d'autres langues**:
+<br>![uk](../../../images/uk.png) [English](README.md), ![france](../../../images/fr.png) [Française](README.fr.md).
+<br>
+
 Objectif
 ---------
 L'objectif de cet exercice est de configurer l'environnement du laboratoire en suivant un processus d'Infrastructure as Code. Cet exercice vous demandera de lancer plusieurs playbooks. Les playbooks accomplissent ce qui suit :

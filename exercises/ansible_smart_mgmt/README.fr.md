@@ -1,5 +1,9 @@
 # Atelier Automated Smart Management 
 
+**Lisez ceci dans d'autres langues**:
+<br>![uk](../../images/uk.png) [English](README.md), ![france](../../images/fr.png) [Française](README.fr.md).
+<br>
+
 Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Management (Satellite) en concert avec Red Hat Ansible Automation Platform.
 
 ## Table des matières
