@@ -1,6 +1,10 @@
 Atelier Automated Smart Management : migration de CentOS vers RHEL et mise à niveau
 ----------------------------------------------------------------------
 
+**Lisez ceci dans d'autres langues**:
+<br>![uk](../../../images/uk.png) [English](README.md), ![france](../../../images/fr.png) [Française](README.fr.md).
+<br>
+
 **Introduction**
 
 Ce cas d'utilisation se concentre sur la conversion de CentOS (bien qu'il puisse s'agir d'un autre dérivé de RHEL) vers RHEL tout en conservant une application 3-tiers. Bien que nous ne montrions ce processus que pour quelques systèmes, il peut être étendu à un plus grand nombre d'hôtes physiques, virtuels ou en nuage en utilisant les dépôts de contenu fournis par [Red Hat Satellite](https://www.redhat.com/en/technologies/management/satellite) (inclus dans [Red Hat Smart Management](https://www.redhat.com/en/technologies/management/smart-management)). Le processus de conversion sera piloté par l'automatisation construite et exécutée à l'aide de [Ansible Automation Platform](https://www.redhat.com/en/technologies/management/ansible).

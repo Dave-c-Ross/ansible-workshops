@@ -1,6 +1,10 @@
 Atelier Automated Smart Management : Configurer et exécuter une analyse OpenSCAP
 ================================================================================
 
+**Lisez ceci dans d'autres langues**:
+<br>![uk](../../../images/uk.png) [English](README.md), ![france](../../../images/fr.png) [Française](README.fr.md).
+<br>
+
 Dans cet exercice, nous allons apprendre à configurer et à effectuer une analyse OpenSCAP à l'aide de playbooks dans Ansible Automation Platform 2 avec Satellite. Lorsque vous exécutez plusieurs systèmes Red Hat Enterprise Linux, il est important de maintenir tous ces systèmes conformes à une politique de sécurité et d'effectuer des analyses de sécurité fréquemment. OpenSCAP est un projet open source qui est utilisé par des agences gouvernementales, des entreprises, ainsi que par dans entreprise de commerce électronique (pour ne citer que quelques exemples). OpenSCAP fournit des outils pour la vérification automatique des vulnérabilités. Il es possilbe d'installer des manifeste SCAP workbench v1.2.0-8 en format RPM qui fournira des capacités d'analyse. Satellite vient avec le manifeste de sécurité SCAP v0.1.54-3 pour les systèmes RHEL7 et CentOS fournissant les tests XCCDF appropriés pour la conformité PCI et STIG. Cet exercice se concentrera sur les systèmes RHEL. 
 
 Environnement

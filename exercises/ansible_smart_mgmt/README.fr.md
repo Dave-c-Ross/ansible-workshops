@@ -1,5 +1,9 @@
 # Atelier Automated Smart Management 
 
+**Lisez ceci dans d'autres langues**:
+<br>![uk](../../images/uk.png) [English](README.md), ![france](../../images/fr.png) [Française](README.fr.md).
+<br>
+
 Dans cet atelier, vous apprendrez à tirer le meilleur parti de Red Hat Smart Management (Satellite) en concert avec Red Hat Ansible Automation Platform.
 
 ## Table des matières
@@ -20,7 +24,7 @@ Cet atelier se concentre actuellement sur ces trois points sensibles de gestion 
 
 Les exercices sont auto-explicatifs et guident les participants tout au long de l'atelier. Tous les concepts sont expliqués lorsqu'ils sont introduits.
 
-Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer plus en détails l'automatisation, les bases d'Ansible et les sujets des exercices. La présentation de l'atelier est située ici, en anglais [Atelier automatisé de gestion intelligente](https://aap2.demoredhat.com/decks/ansible_smart_mgmt.pdf), en français : 
+Il y a une présentation optionnelle disponible pour soutenir les ateliers et expliquer plus en détails l'automatisation, les bases d'Ansible et les sujets des exercices. La présentation de l'atelier est située ici, en anglais [Atelier automatisé de gestion intelligente](../../decks/ansible_smart_mgmt_fr.pdf). _[Red Hat Internal link](https://docs.google.com/presentation/d/1XpqjDbjEHel2FZLJdrKz67FA2RYKw3eZPY0oqzd8qiY)_
 
 Jetez également un coup d'oeil à notre présentation sur les meilleurs pratiques avec Ansible: en anglais
 [Pratiques exemplaires disponibles](../../decks/ansible_best_practices.pdf)
